@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页 - JSON在线编辑器</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.index h2{font-size:32px;margin:0 0 20px;}
+.div2{width:720px;height:auto;margin:0 auto;position:relative;}
+.highlight{overflow:auto;width:98%;height:auto;padding:.3em .5em;border:1px solid silver;background:radial-gradient(at top,rgba(0,0,0,.2),transparent 70%) no-repeat;background-size:100% 15px;margin:0 0 50px;}
+.box{width: 100%;height: auto;margin:0 auto;}
+.box span{width:50%;height: 20px;  display: block; }
+
+div.jsoneditor-frame {color:#1A1A1A;border:1px solid #C1C1C1;box-sizing:border-box;width:100%;height:100%;overflow:auto;position:relative;padding:0;}
+table.jsoneditor-table {border-collapse:collapse;border-spacing:0;width:100%;margin:0;}
+div.jsoneditor-content-outer,div.jsonformatter-content {width:100%;height:100%;margin:-35px 0 0 0;padding:35px 0 0 0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;}
+div.jsoneditor-content {width:100%;height:100%;position:relative;overflow:auto;}
+textarea.jsonformatter-textarea {width:100%;height:100%;margin:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;border:none;background-color:white;resize:none;}
+tr.jsoneditor-tr-highlight {background-color:#FFFFAB;}
+button.jsoneditor-dragarea {width:16px;height:24px;/*    margin:3px 0;background:url('img/dots_gray.gif') top center;background-repeat:repeat-y;*/    background:url('jsoneditor-icons.png') -220px 0;display:block;cursor:move;}
+div.jsoneditor-menu {width:100%;height:35px;padding:2px;margin:0;overflow:hidden;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;color:#1A1A1A;border-bottom:1px solid #C1C1C1;}
+table.jsoneditor-search {position:absolute;right:2px;top:2px;}
+table.jsoneditor-search-input {border-collapse:collapse;}
+div.jsoneditor-search {border:1px solid #C1C1C1;background-color:white;padding:0 2px;margin:0;}
+input.jsoneditor-search {width:120px;border:none;outline:none;margin:1px;}
+div.jsoneditor-search-results {color:#4d4d4d;padding-right:5px;}
+button.jsoneditor-search-refresh,button.jsoneditor-search-next,button.jsoneditor-search-previous {width:16px;height:24px;padding:0;margin:0;border:none;background:url('jsoneditor-icons.png');vertical-align:top;}
+button.jsoneditor-search-refresh {width:18px;background-position:-243px -25px;}
+button.jsoneditor-search-next {cursor:pointer;background-position:-268px -25px;}
+button.jsoneditor-search-next:hover {background-position:-268px -1px;}
+button.jsoneditor-search-previous {cursor:pointer;background-position:-292px -25px;margin-right:2px;}
+button.jsoneditor-search-previous:hover {background-position:-292px -1px;}
+button.jsoneditor-menu {width:auto;height:26px;margin:2px;padding:2px;border-radius:2px;border:1px solid #aec0f8;background:#D0F0EF url('image/jsoneditor-icons.png') no-repeat;padding: 0 10px 0 25px; cursor: pointer;}
+button.jsoneditor-menu:hover {background-color:#FFFFFF;}
+button.jsoneditor-menu:active {background-color:#ffffff;}
+button.jsoneditor-menu:disabled {background-color:#D0F0EF;}
+button.jsoneditor-collapse-all {background-position:-312px 0;}
+button.jsoneditor-expand-all {background-position:-312px -24px;}
+button.jsoneditor-undo {background-position:-336px 0;}
+button.jsoneditor-redo {background-position:-360px 0;}
+button.jsoneditor-undo:disabled {background-position:-336px -24px;}
+button.jsoneditor-redo:disabled {background-position:-360px -24px;}
+/* TODO:css for button:disabled is not supported by IE8 */button.jsoneditor-compact {background-position:0px 0px;}
+button.jsoneditor-format {background-position:0px -24px;}
+tr,th,td {padding:0;margin:0;}
+td.jsoneditor-td {vertical-align:top;}
+td.jsoneditor-td {padding:0 3px;}
+td.jsoneditor-td-edit {background-color:#F5F5F5;padding:0;}
+td.jsoneditor-td-tree {vertical-align:top;}
+td.jsoneditor-droparea {height:24px;border-top:1px dashed gray;border-bottom:1px dashed gray;background-color:#FFFF80;}
+.jsoneditor-field,.jsoneditor-value,.jsoneditor-td,.jsoneditor-th,.jsoneditor-type,.jsonformatter-textarea {font-family:droid sans mono,monospace,courier new,courier,sans-serif;font-size:10pt;color:#1A1A1A;}
+.jsoneditor-hidden-focus {position:absolute;left:-1000px;top:-1000px;border:none;outline:none;}
+#by-jsonlint {text-align:right;}
+</style>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jsoneditor.js"></script>
+<script type="text/javascript" src="js/notify.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<script type="text/javascript">
+$(function () {
+   app.load();
+});
+</script>
+</head>
+
+<body>
+<div class="index">
+  <h2>JSON在线编辑器</h2>
+</div>
+
+<div class="div2">
+  <div class="highlight">
+    <div class="box">
+        
+        <div id="content-wrapper" style="height:520px;">
+            <div id="jsonformatter" style="width:100%;height: 512px;"></div>
+        </div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

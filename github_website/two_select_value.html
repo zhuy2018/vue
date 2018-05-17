@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页 - 两个select变化的值检测</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.index h2{font-size:32px;margin:0 0 20px;}
+.div2{width:720px;height:auto;margin:0 auto;position:relative;}
+.highlight{overflow:auto;width:98%;height:auto;padding:.3em .5em;border:1px solid silver;background:radial-gradient(at top,rgba(0,0,0,.2),transparent 70%) no-repeat;background-size:100% 15px;margin:0 0 50px;}
+.box{width: 100%;height: auto;margin:50px auto;}
+.box span{display: block;}
+#monitor{margin:10px 0; font-size:14px;}
+</style>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<script type="text/javascript">
+$(function (){
+    $('#Asettocmd').change(function (){
+        var $val=$(this).find("option:selected").val();
+        $('.text1').val( $(this).find("option:selected").text() );
+        switch ($val){
+            case "1":
+                $("#Bsettocmd option:contains('9')").attr("selected", true); 
+                $("#Bsettocmd").val("9");
+                break;
+            case "2":
+                $("#Bsettocmd option:contains('8')").attr("selected", true);
+                 $("#Bsettocmd").val("8");
+                break;
+            case "3":
+                $("#Bsettocmd option:contains('7')").attr("selected", true);
+                $("#Bsettocmd").val("7");
+                break;
+            case "4":
+                $("#Bsettocmd option:contains('6')").attr("selected", true);
+                $("#Bsettocmd").val("6");
+                break;
+            case "5":
+                $("#Bsettocmd option:contains('5')").attr("selected", true);
+                $("#Bsettocmd").val("5");
+                break;
+            case "6":
+                $("#Bsettocmd option:contains('4')").attr("selected", true);
+                $("#Bsettocmd").val("4");
+                break;
+            case "7":
+                $("#Bsettocmd option:contains('3')").attr("selected", true);
+                $("#Bsettocmd").val("3");
+                break;
+            case "8":
+                $("#Bsettocmd option:contains('2')").attr("selected", true);
+                $("#Bsettocmd").val("2");
+                break;
+            case "9":
+                $("#Bsettocmd option:contains('1')").attr("selected", true);
+                $("#Bsettocmd").val("1");
+                break;
+            default:
+                $("#Bsettocmd option").attr("selected", false);
+        }
+    });
+    $('#Bsettocmd').change(function (){
+        var $val=$(this).find("option:selected").val();
+        $('.text2').val( $(this).find("option:selected").text() );
+        switch ($val){
+            case "1":
+                $("#Asettocmd option:contains('9')").attr("selected", true);
+                $("#Asettocmd").val("9");
+                break;
+            case "2":
+                $("#Asettocmd option:contains('8')").attr("selected", true);
+                $("#Asettocmd").val("8");
+                break;
+            case "3":
+                $("#Asettocmd option:contains('7')").attr("selected", true);
+                $("#Asettocmd").val("7");
+                break;
+            case "4":
+                $("#Asettocmd option:contains('6')").attr("selected", true);
+                $("#Asettocmd").val("6");
+                break;
+            case "5":
+                $("#Asettocmd option:contains('5')").attr("selected", true);
+                $("#Asettocmd").val("5");
+                break;
+            case "6":
+                $("#Asettocmd option:contains('4')").attr("selected", true);
+                $("#Asettocmd").val("4");
+                break;
+            case "7":
+                $("#Asettocmd option:contains('3')").attr("selected", true);
+                $("#Asettocmd").val("3");
+                break;
+            case "8":
+                $("#Asettocmd option:contains('2')").attr("selected", true);
+                $("#Asettocmd").val("2");
+                break;
+            case "9":
+                $("#Asettocmd option:contains('1')").attr("selected", true);
+                $("#Asettocmd").val("1");
+                break;
+            default:
+                $("#Asettocmd option").attr("selected", false);
+        }
+    });
+});
+</script>
+</head>
+
+<body>
+<div class="index">
+  <h2>两个select变化的值检测</h2>
+</div>
+
+<div class="div2">
+  <div class="highlight">
+    <div class="box">
+        <input class="text1" type="text" value="--A平面选择百分比--" style="margin-left:60px;" />
+        <select id="Asettocmd" name="Asettocmd">
+            <option value="0">--A平面选择百分比--</option>
+            <option value="1">10%</option>
+            <option value="2">20%</option>
+            <option value="3">30%</option>
+            <option value="4">40%</option>
+            <option value="5">50%</option>
+            <option value="6">60%</option>
+            <option value="7">70%</option>
+            <option value="8">80%</option>
+            <option value="9">90%</option>
+        </select>
+
+        <select id="Bsettocmd" name="Bsettocmd">
+            <option value="0">--B平面选择百分比--</option>
+            <option value="1">10%</option>
+            <option value="2">20%</option>
+            <option value="3">30%</option>
+            <option value="4">40%</option>
+            <option value="5">50%</option>
+            <option value="6">60%</option>
+            <option value="7">70%</option>
+            <option value="8">80%</option>
+            <option value="9">90%</option>
+        </select>
+        <input class="text2" type="text" value="--B平面选择百分比--" />
+    </div>
+  </div>
+</div>
+</body>
+</html>

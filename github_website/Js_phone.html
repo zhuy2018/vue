@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页 - js判断手机型号</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<style type="text/css">
+.index{width:720px;margin:0 auto;font: 14px/1.5 tahoma,arial,"Hiragino Sans GB",\5b8b\4f53;}
+.index h2{font-size:32px;margin:0 0 20px;}
+p{text-align: center;margin-top: 20px;}
+.div1{width:100%;padding:0 0 30px;margin:0 auto;height:auto;position:relative;}
+.highlight{
+  overflow: auto;
+  width: 98%;
+  height: auto;
+  padding: .3em .5em;
+  border: 1px solid silver;
+  background: radial-gradient(at top, rgba(0,0,0,.2),transparent 70%) no-repeat;
+  background-size: 100% 15px;
+}  
+</style>
+</head>
+
+<body>
+<div class="index">
+  <h2>js判断手机型号</h2>
+
+  <div class="div1">
+      <div class="highlight">
+          &lt;script language="javascript"&gt;<br>window.onload = function () {<br>alert("1");<br>var u = navigator.userAgent;<br>if (u.indexOf('Android') &gt; -1 || u.indexOf('Linux') &gt; -1) {//安卓手机<br>alert("安卓手机");<br>// window.location.href = "mobile/index.html";<br>} else if (u.indexOf('iPhone') &gt; -1) {//苹果手机<br>// window.location.href = "mobile/index.html";<br>alert("苹果手机");<br>} else if (u.indexOf('Windows Phone') &gt; -1) {//winphone手机<br>alert("winphone手机");<br>// window.location.href = "mobile/index.html";<br>}<br>}<br>&lt;/script&gt;
+      </div>
+  </div>
+</p>
+<script language="javascript">
+window.onload = function() {
+    var u = navigator.userAgent;
+    if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) { //安卓手机
+        alert("安卓手机");
+    } else if (u.indexOf('iPhone') > -1) { //苹果手机
+        alert("苹果手机");
+    } else if (u.indexOf('Windows Phone') > -1) { //winphone手机
+        alert("winphone手机");
+    }
+}
+</script>
+</div>
+</body>
+</html>

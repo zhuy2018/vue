@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页 - 拖动排序</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.index h2{font-size:32px;margin:0 0 20px;}
+.div2{width:720px;height:auto;margin:0 auto;position:relative;}
+.highlight{overflow:auto;width:98%;height:auto;padding:.3em .5em;border:1px solid silver;background:radial-gradient(at top,rgba(0,0,0,.2),transparent 70%) no-repeat;background-size:100% 15px;margin:0 0 50px;}
+.box{width: 100%;height: auto;margin:0 auto;}
+.box span{width:50%;height: 20px;  display: block; }
+
+.sortable {
+	border: solid 1px #ddd;
+	padding: 20px 30px;
+	margin: 20px;
+}
+
+.sortable .item {
+	width: 210px;
+	border: solid 1px #ccc;
+	line-height: 30px;
+	padding-left: 10px;
+	cursor: move;
+	transition: all .2s ease;
+}
+
+.sortable .item strong {
+	color: #333;
+	-webkit-user-select: none;
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<script type="text/javascript">
+$(function (){
+	var itemArr = document.getElementsByClassName('item');
+	for(var i = 0; i < itemArr.length; i++) {
+		itemArr[i].setAttribute('draggable', 'true');
+		itemArr[i].dataset.order = i;
+	}
+
+	var targetY = 0;
+	var itemHeight = itemArr[0].innerHeight;
+	var nowItem = "";
+	var targetItem = "";
+	
+	//拖拽开始
+	document.addEventListener('dragstart', function(event) {
+		event.target.style.opacity = "0.4";
+		nowItem = event.target.dataset.order;
+	}, false)
+	
+	//拖拽中
+	document.addEventListener('drag', function(event) {
+		if(event.pageY >= targetY ) {
+			document.getElementById('sortable').insertBefore(event.target, targetItem.nextSibling);
+		}else{
+			document.getElementById('sortable').insertBefore(event.target, targetItem);
+		}
+	}, false)
+	
+	//拖拽结束
+	document.addEventListener('dragend', function(event) {
+		event.target.style.opacity = "1";
+		for(var i = 0; i < itemArr.length; i++) {
+			itemArr[i].dataset.order = i;
+		}
+	}, false)
+	
+	//拖拽到目标
+	document.addEventListener("dragenter", function(event) {
+		if(event.target.className == "item" ) {
+			console.log('目标：' + event.pageY);
+			targetY = event.pageY;
+			targetItem = event.target;
+		} else {
+			console.log("不是拖动目标");
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="index">
+  <h2>拖动排序</h2>
+</div>
+
+<div class="div2">
+  <div class="highlight">
+    <div class="box">
+		<div class="sortable" id="sortable">
+            <div class="item">
+				<strong>吸血恶魔兽</strong>
+			</div>
+			<div class="item">
+				<strong>超究极魔兽</strong>
+			</div>
+			<div class="item">
+				<strong>恶魔兽</strong>
+			</div>
+			<div class="item">
+				<strong>小丑皇兽</strong>
+			</div>
+			<div class="item">
+				<strong>小恶魔兽</strong>
+			</div>
+			<div class="item">
+				<strong>究极恶魔兽</strong>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<script type="text/javascript">
+$(function (){
+    var $index=$('.index');
+	for( var i=0;i<data.length;i++ ){
+	    var Thtml="";
+		Thtml+='<div class="index_co"><h2><a href=" '+ data[i].href +' "> '+ data[i].name +' </a></h2><span> '+ data[i].timer +' </span><em> '+ data[i].em +' </em><a href=" '+ data[i].href +' ">阅读全文</a></div>';
+		$index.prepend( Thtml );
+	}
+});
+</script>
+</head>
+
+<body>
+<div class="index"></div>
+</body>
+</html>

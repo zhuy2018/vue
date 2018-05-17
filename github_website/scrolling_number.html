@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页 - 号码滚动抽奖效果</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<style type="text/css">
+.index h2{
+	font-size:32px;
+	margin:0 0 20px;
+	}
+.div2{
+	width:720px;
+	height:500px;
+	margin:0 auto;
+	overflow:hidden;
+	position:relative;
+	}
+.highlight{
+  overflow: auto;
+  width: 98%;
+  height: auto;
+  padding: .3em .5em;
+  border: 1px solid silver;
+  background: radial-gradient(at top, rgba(0,0,0,.2),transparent 70%) no-repeat;
+  background-size: 100% 15px;
+  margin: 0 0 20px;
+}
+.pq{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 200px;
+  height: 150px;
+}
+.fl_itrm{
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+.itrm5{
+  flex-shrink: -1;
+}
+
+</style>
+</head>
+
+<body>
+<div class="index">
+  <h2>号码滚动抽奖效果</h2>
+</div>
+
+<div class="div2">
+    <div class="highlight">
+        <style>
+        .highlight div{
+            height: 20px;
+            overflow: hidden;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            position: relative;
+            top: 0px;
+        }
+        ul li{ font-size: 16px; }
+        </style>
+        <div>
+            <ul>
+                <li>13452911111</li>
+                <li>13452922222</li>
+                <li>13452933333</li>
+                <li>13452944444</li>
+                <li>13452955555</li>
+                <li>13452966666</li>
+                <li>13452977777</li>
+                <li>13452988888</li>
+                <li>13452999999</li>
+                <li>13452900000</li>
+                <li>13452911351</li>
+            </ul>
+        </div>
+            <h1 style="color: red;">按Enter键启动/暂停抽奖</h1>
+        <script>
+            var oLiHeight = document.getElementsByTagName("li")[0].offsetHeight;
+            var speed = 3;
+            var oUl = document.getElementsByTagName("ul")[0];
+            var roll = false;
+            function numberRoll(){
+                if(parseInt(oUl.style.top == "" ? 0 : oUl.style.top) > '-' + oLiHeight){
+                    oUl.style.top = parseInt(oUl.style.top == "" ? 0 : oUl.style.top) - speed + 'px';
+                } else {
+                    oUl.appendChild(oUl.firstElementChild);
+                    oUl.style.top = 0;
+                }
+                if(roll){
+                    window.requestAnimationFrame(numberRoll);
+                } else {
+                    window.cancelAnimationFrame(numberRoll);
+                    oUl.style.top = 0;
+                }
+                
+            };
+            window.onkeyup = function(key){
+                if(key.which == 13){
+                    console.log("enter");
+                    if(roll){
+                        roll = false;                                   
+                    } else {
+                        roll = true;
+                        window.requestAnimationFrame(numberRoll);                   
+                    }               
+                }
+            }
+        </script>
+    </div>
+
+    <div class="pq">
+      <p class="fl_itrm itrm1">1</p>
+      <p class="fl_itrm itrm2">2</p>
+      <p class="fl_itrm itrm3">3</p>
+      <p class="fl_itrm itrm4">4</p>
+      <p class="fl_itrm itrm5">5</p>
+    </div>
+</div>
+    <!-- IE8以下浏览器的提示 -->
+    <!--[if IE 9]>
+        <script >
+            window.isie = true;
+        </script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script >
+        alert('本网站不支持IE8以及IE8以下的IE浏览器，请自行下载chrome');
+    </script>
+    <![endif]-->
+
+    <!--[if !IE]>
+    -->
+</body>
+</html>

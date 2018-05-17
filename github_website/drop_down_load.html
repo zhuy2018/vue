@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>首页 - 下拉加载更多DEMO(js实现)</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<style>
+.index h2{font-size:32px;margin:0 0 20px;}
+.div2{width:720px;height:auto;margin:0 auto;position:relative;}
+.highlight{overflow:auto;width:98%;height:auto;padding:.3em .5em;border:1px solid silver;background:radial-gradient(at top,rgba(0,0,0,.2),transparent 70%) no-repeat;background-size:100% 15px;margin:0 0 50px;}
+.box{width: 100%;height: auto;margin:0 auto;}
+.main{width:96%;height:700px;overflow: hidden;overflow-y: auto;margin: 0 auto;padding:0 2%;}
+</style>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<script type="text/javascript">
+$(function (){
+  $(".main").unbind("scroll").bind("scroll", function(e){  
+      var sum = this.scrollHeight;  
+      if (sum <= $(this).scrollTop() + $(this).height()) {  
+          $(".main").append($(".child").clone());  
+      }  
+  });
+});
+</script>
+</head>
+
+<body>
+<div class="index">
+  <h2>下拉加载更多DEMO(js实现)</h2>
+</div>
+
+<div class="div2">
+  <div class="highlight">
+    <div class="box">
+      <div>下拉加载更多</div>  
+      <div class="main">  
+          <div class="child" style='border:1px solid red;margin-top:20px;color:grey;height:800px'></div>  
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

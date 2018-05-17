@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页 - 全选反选</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.index h2{font-size:32px;margin:0 0 20px;}
+.div2{width:720px;height:auto;margin:0 auto;position:relative;}
+.highlight{overflow:auto;width:98%;height:auto;padding:.3em .5em;border:1px solid silver;background:radial-gradient(at top,rgba(0,0,0,.2),transparent 70%) no-repeat;background-size:100% 15px;margin:0 0 50px;}
+.box{width: 100%;height: auto;margin:50px auto;}
+.box span{display: block;}
+#monitor{margin:10px 0; font-size:14px;}
+</style>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<script type="text/javascript">
+$(function() {
+    //全选、全不选
+    $('#all').click(function() {
+        if (this.checked) {
+            $('#list :checkbox').prop('checked', true);
+        } else {
+            $('#list :checkbox').prop('checked', false);
+        }
+    })
+    
+    //全选
+    $('#selAll').click(function() {
+        $('#list :checkbox,#all').prop('checked', true);
+    })
+    //全不选
+    $('#selNone').click(function() {
+        $('#list :checkbox,#all').prop('checked', false);
+    })
+    //反选
+    var r=$('#list').find('input');  
+    $('#selReverse').click(function() {
+        $('#list :checkbox').each(function() {
+            $(this).prop('checked', !$(this).prop('checked'));
+        })
+        allchk();
+    })
+    //控制全选复选框
+    $('#list :checkbox').click(function() {
+        allchk();
+    })
+    //获取选中项的值
+    $('#getValue').click(function() {
+        var arrVal = new Array;
+        for(var i=0;i<r.length;i++){
+            if(r[i].checked){
+                arrVal[i] = r[i].value+","+r[i].nextSibling.nodeValue;
+            }
+        }
+        var strVal = arrVal.join('');
+        alert(strVal);
+    })
+})
+
+function allchk() {
+    var chknum = $('#list :checkbox').size();
+    var chk = 0;
+    $('#list :checkbox').each(function() {
+        if ($(this).prop('checked') == true) {
+            chk++;
+        }
+    })
+    if (chk == chknum) {
+        $('#all').prop('checked', true);
+    } else {
+        $('#all').prop('checked', false);
+    }
+}
+</script>
+</head>
+
+<body>
+<div class="index">
+  <h2>全选反选</h2>
+</div>
+
+<div class="div2">
+  <div class="highlight">
+    <div class="box">
+        <div class="showarea">
+            <ul id="list">
+                <li><label><input type="checkbox" value="1" /> 1.时间都去哪儿了</label></li>
+                <li><label><input type="checkbox" value="2" /> 2.海阔天空</label></li>
+                <li><label><input type="checkbox" value="3" /> 3.真的爱你</label></li>
+                <li><label><input type="checkbox" value="4" /> 4.不再犹豫</label></li>
+                <li><label><input type="checkbox" value="5" /> 5.光辉岁月</label></li>
+                <li><label><input type="checkbox" value="6" /> 6.喜欢妳</label></li>
+            </ul>
+            <p style="margin-top:50px;">
+                <input type="checkbox" id="all" />
+                <button id="selAll">全选</button>
+                <button id="selNone">全不选</button>
+                <button id="selReverse">反选</button>
+                <button id="getValue">获取选中的值</button>
+            </p>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

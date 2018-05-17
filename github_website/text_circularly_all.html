@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页 - 不同形式文字循环滚动效果</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.index h2{
+	font-size:32px;
+	margin:0 0 20px;
+	}
+.div2{
+	width:720px;
+	height:auto;
+	margin:0 auto;
+	position:relative;
+	}
+.highlight{
+  overflow: auto;
+  width: 98%;
+  height: auto;
+  padding: .3em .5em;
+  border: 1px solid silver;
+  background: radial-gradient(at top, rgba(0,0,0,.2),transparent 70%) no-repeat;
+  background-size: 100% 15px;
+  margin: 0 0 50px;
+}
+#container{
+    width:500px;
+    height:300px;
+    margin:20px auto;
+    border:2px solid #ddd;
+    text-align: center;
+    background-color:#eee;
+}
+#container h1{
+  width: 100%;
+  color: #000;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+  margin:50px auto;
+}
+.text{
+    width:300px;
+    height:100px;
+    overflow:hidden;
+    cursor:pointer;
+    margin:0 auto;
+}
+.text ul li{
+    width:300px;
+    height:100px;
+    background:#333;
+    line-height:100px;
+    color: #fff;
+}
+#scrollDiv{width:300px;height:100px;min-height:25px;line-height:25px;border:#ccc 1px solid;overflow:hidden; margin:0 auto;}
+#scrollDiv li{height:25px;padding-left:10px;}
+</style>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<script type="text/javascript">
+$(function(){
+    //1、文字滚动的函数
+    function textslide(){
+        var height=($('.text ul li').height());//获取li的高度
+        //让第一个向上30px,完成之后，再把这个li添加到li的最后，然后把它的marginTop还原到0
+        $('.text ul li').eq(0).animate({marginTop:-height},function(){
+            $(this).remove().appendTo('.text ul').css({marginTop:0})
+        });
+
+    }
+    //每隔3s执行一次文字的滚动
+    var t=setInterval(textslide,1000);
+
+
+    //当鼠标触碰到text区域时，停止滚动，就需要清除计时器clearInterval
+    $('.text').hover(function(){
+       clearInterval(t);
+       //当鼠标离开text区域时，继续滚动
+    },function(){
+        t=setInterval(textslide,1000);
+    });
+
+    //2、滚动插件
+    (function($){
+    $.fn.extend({
+        Scroll:function(opt,callback){
+            //参数初始化
+            if(!opt) var opt={};
+            var _this=this.eq(0).find("ul:first");
+            var        lineH=_this.find("li:first").height(), //获取行高
+                    line=opt.line?parseInt(opt.line,10):parseInt(this.height()/lineH,10), //每次滚动的行数，默认为一屏，即父容器高度
+                    speed=opt.speed?parseInt(opt.speed,10):500, //卷动速度，数值越大，速度越慢（毫秒）
+                    timer=opt.timer?parseInt(opt.timer,10):3000; //滚动的时间间隔（毫秒）
+            if(line==0) line=1;
+            var upHeight=0-line*lineH;
+            //滚动函数
+            scrollUp=function(){
+                _this.animate({
+                        marginTop:upHeight
+                },speed,function(){
+                        for(i=1;i<=line;i++){
+                                _this.find("li:first").appendTo(_this);
+                        }
+                        _this.css({marginTop:0});
+                });
+            }
+            //鼠标事件绑定
+            _this.hover(function(){
+                clearInterval(timerID);
+            },function(){
+                timerID=setInterval("scrollUp()",timer);
+            }).mouseout();
+        }        
+    })
+    })(jQuery);
+
+    $(document).ready(function(){
+        $("#scrollDiv").Scroll({line:1,speed:500,timer:1000});//可修改line值，speed值，timer值
+    });
+})
+</script>
+</head>
+
+<body>
+<div class="index">
+  <h2>不同形式文字循环滚动效果</h2>
+</div>
+
+<div class="div2">
+  <div class="highlight">
+    
+    <div id="container">
+      <h1>1、单行文字滚动效果</h1>
+      <div class="text">
+          <ul>
+              <li class="li1" style="color:orange">wellcoto</li>
+              <li><a style="color:green" href="http://lmrone.top">http://lmrone.top</a></li>
+              <li style="color:blue">web前端学习</li>
+          </ul>
+      </div>
+    </div>
+
+    <div id="container">
+      <h1>2、多行文本上下来回滚动</h1>
+      <div id="scrollDiv">
+        <ul>
+          <li>这是公告标题的第一行</li>
+          <li>这是公告标题的第二行</li>
+          <li>这是公告标题的第三行</li>
+          <li>这是公告标题的第四行</li>
+          <li>这是公告标题的第五行</li>
+          <li>这是公告标题的第六行</li>
+          <li>这是公告标题的第七行</li>
+          <li>这是公告标题的第八行</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页 - 一组选重复不选和Git常用命令表</title>
+<link href="css/basic.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.index h2{font-size:32px;margin:0 0 20px;}
+.div2{width:720px;height:auto;margin:0 auto;position:relative;}
+.highlight{overflow:auto;width:98%;height:auto;padding:.3em .5em;border:1px solid silver;background:radial-gradient(at top,rgba(0,0,0,.2),transparent 70%) no-repeat;background-size:100% 15px;margin:0 0 50px;}
+.box{width: 100%;height: auto;margin:0 auto;}
+.box span{width:50%;height: 20px;/*  display: block; */}
+#monitor{margin:10px 0 0; font-size:14px;}
+.choose_repeat{ font-size: 16px; }
+.subtypesdiv {width: 100%;display: none;margin: 10px 0 0;}
+.subtypes {height: 50px;}
+</style>
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<script type="text/javascript">
+$(function () {
+    var arr = [];
+    $('.subtypes').each(function (i, ele) {
+        $(ele).attr('data-btn', true)
+    });
+    $('.subtypes').on('click', function () {
+        $('#appname1').html('')
+        var val = $(this).find('span').html();
+        var type = $(this).attr('data-btn');
+        console.log(type)
+        if (type === 'true') {
+            $(this).find('input[type=checkbox]').prop('checked', true);
+            $(this).attr('data-btn', false);
+        } else {
+            $(this).attr('data-btn', true);
+            $(this).find('input[type=checkbox]').prop('checked', false);
+        }
+        if (arr.indexOf(val) != -1) {
+            //console.log(arr.indexOf(val))
+            arr.remove(val);
+        } else {
+            arr.push(val)
+        }
+          console.log(arr);
+       if(arr.length){
+           for (var i = 0; i < arr.length; i++) {
+
+               $('#appname1').append('<span >' + arr[i] + '</span> ');
+           }
+       }
+    })
+    if (!Array.indexOf) {
+        Array.prototype.indexOf = function (obj) {
+            for (var i = 0; i < this.length; i++) {
+                if (this[i] == obj) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+    }
+    Array.prototype.remove = function (val) {
+        var index = this.indexOf(val);
+        if (index > -1) {
+            this.splice(index, 1);
+        }
+    }
+});
+</script>
+</head>
+
+<body>
+<div class="index">
+  <h2>一组选重复不选和Git常用命令表</h2>
+</div>
+
+<div class="div2">
+  <div class="highlight">
+    <div class="box">
+        <h2 style="font-size:24px; margin-bottom:10px;">一组选重复不选</h2>
+        <div class="choose_repeat">
+            <p style="width:96%;height:40px;color:#000;margin-bottom:1px;" id="appname1"></p>
+            <div onOff="0" id="112" class="subtypes" style="width:25%;float:left;">
+                <input type="checkbox" name="subtypes" style="opacity:1;float:left;position: inherit;"/>
+                <span>axbmode102</span>
+                <select class="form-control subtypesdiv" multiple style="width: 95%;margin-bottom:0px;padding:0px;height:70px;">
+                    <option value="330000">浙江</option>
+                    <option value="110000">北京</option>
+                    <option value="450000">广西</option>
+                </select>
+            </div>
+            <div onOff="0" id="212" class="subtypes" style="width:25%;float:left;">
+                <input id="" type="checkbox" name="subtypes" value="02" style="opacity:1;float:left;position: inherit;"/>
+                <span>ax102</span>
+                <select class="form-control subtypesdiv" multiple="true"
+                        style="width: 95%;margin-bottom:0px;padding:0px;height:70px;">
+                    <option value="330000">浙江</option>
+                    <option value="110000">北京</option>
+                    <option value="450000">广西</option>
+                </select>
+            </div>
+            <div onOff="0" id="312" class="subtypes" style="width:25%;float:left;">
+                <input id="" type="checkbox" name="subtypes" value="02" style="opacity:1;float:left;position: inherit;"/>
+                <span>103</span>
+                <select class="form-control subtypesdiv" multiple="true"
+                        style="width: 95%;margin-bottom:0px;padding:0px;height:70px;">
+                    <option value="330000">浙江</option>
+                    <option value="110000">北京</option>
+                    <option value="450000">广西</option>
+                </select>
+            </div>
+            <div onOff="0" id="01" class="subtypes" style="width:25%;float:left;">
+                <input id="" type="checkbox" name="subtypes" value="02" style="opacity:1;float:left;position: inherit;"/>
+                <span>axmode102</span>
+                <select class="form-control subtypesdiv" multiple="true"
+                        style="width: 95%;margin-bottom:0px;padding:0px;height:70px;">
+                    <option value="330000">浙江</option>
+                    <option value="110000">北京</option>
+                    <option value="450000">广西</option>
+                </select>
+            </div>
+            <div onOff="0" id="111" class="subtypes" style="width:25%;float:left;">
+                <input id="" type="checkbox" name="subtypes" value="02" style="opacity:1;float:left;position: inherit;"/>
+                <span>axmode101</span>
+                <select class="form-control subtypesdiv" multiple="true"
+                        style="width: 95%;margin-bottom:0px;padding:0px;height:70px;">
+                    <option value="330000">浙江2</option>
+                    <option value="110000">北京2</option>
+                    <option value="450000">广西2</option>
+                </select>
+            </div>
+            <div onOff="0" id="211" class="subtypes" style="width:25%;float:left;">
+                <input id="" type="checkbox" name="subtypes" value="02" style="opacity:1;float:left;position: inherit;"/>
+                <span>axmode103</span>
+                <select class="form-control subtypesdiv" multiple="true"
+                        style="width: 95%;margin-bottom:0px;padding:0px;height:70px;">
+                    <option value="330000">浙江2</option>
+                    <option value="110000">北京</option>
+                    <option value="450000">广西</option>
+                </select>
+            </div>
+            <div id="311" class="subtypes" style="width:25%;float:left;">
+                <input id="" type="checkbox" name="subtypes" value="02" style="opacity:1;float:left;position: inherit;"/>
+                <span>axmode109</span>
+                <select class="form-control subtypesdiv" multiple="true"
+                        style="width: 95%;margin-bottom:0px;padding:0px;height:70px;">
+                    <option value="330000">浙江</option>
+                    <option value="110000">北京</option>
+                    <option value="450000">广西</option>
+                </select>
+            </div>
+            <div onOff="0" id="411" class="subtypes" style="width:25%;float:left;">
+                <input id="" type="checkbox" name="subtypes" value="311" style="opacity:1;float:left;position: inherit;"/>
+                <span>axybmode110</span>
+                <select class="form-control subtypesdiv" multiple="true"
+                        style="width: 95%;margin-bottom:0px;padding:0px;height:70px;">
+                    <option value="330000">浙江</option>
+                    <option value="110000">北京</option>
+                    <option value="450000">广西</option>
+                </select>
+            </div>
+        </div>
+        <h2 style="font-size:24px; margin-bottom:10px;">Git 常用命令表</h2>
+        <article id="postview" class="postview editor_content lazy"><font size="4"><span style="color:#00b050 ">master <span style="color:#a8a8a8 ">默认开发分支</span>&nbsp; &nbsp;Head <span style="color:#a8a8a8 ">默认开发分支</span>&nbsp;&nbsp;Head^<span style="color:#a8a8a8 ">Head的父提交</span>&nbsp;&nbsp;origin <span style="color:#a8a8a8 ">默认远程版本库</span></span></font><br><br><font size="5">创建版本库</font><br>$ git clone git@git.oschina.net:veki/veki.git&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;克隆远程版本库<br>
+        $ git init&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 初始化本地git仓库（创建新仓库）<br> <br> <font size="5">修改和提交</font><br>
+        $ git status&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;查看当前仓库状态<br>
+        $ git add .&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 跟踪所有改动的文件<br>
+        $ git add &lt;file&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;跟踪指定的文件&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<br>
+        $ git mv &lt;old&gt; &lt;new&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;修改文件名字<br>
+        $ git rm &lt;file&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;删除文件&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<br>
+        $ git rm --cached &lt;file&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;停止跟踪文件但不删除<br> <br> <font size="5">查看历史提交</font><br>
+        $ git log&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;查看提交历史<br>
+        $ git log -p &lt;file&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;查看指定文件的提交历史<br>
+        $ git blam&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;以列表方式查看指定文件的提交历史<br> <br> <font size="5">撤销</font><br>
+        $ git reset --hard HEAD&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;撤销工作目录中未提交文件的修改内容<br>
+        $ git checkout HEAD &lt;file&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;撤销指定的未提交文件的修改内容<br>
+        $ git rever &lt;commit&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 撤销指定的提交<br> <br> <font size="5">分支与标签</font><br>
+        $ git branch&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;显示所有本地分支<br>
+        $ git checkout &lt;branch/tag&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 切换到指定分支或标签<br>
+        $ git checkout &lt;new-tag&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;创建新分支<br>
+        $ git branch -d &lt;branch&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;删除本地分支<br>
+        $ git tag&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;列出所有本地标签<br>
+        $ git tag &lt;tagname&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 基于最新提交创建标签<br>
+        $ git tag -d &lt;tagname&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;删除标签<br> <br> <font size="5">合并</font><br>
+        $ git marge &lt;branch&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;合并指定分支到当前分支<br>
+        $git rabase &lt;branch&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;衍合指定分支到当前分支<br> <br> <font size="5">远程操作</font><br>
+        $ git remote -v&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 查看远程版本库信息<br>
+        $ git remote show &lt;remote&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 查看指定远程版本库信息<br>
+        $ git remote add &lt;remote&gt; &lt;url&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;添加远程版本库<br>
+        $ git fetch &lt;remote&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 从远程库获取代码<br>
+        $ git pull &lt;remote&gt; &lt;branch&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;下载代码及快速合并<br>
+        $ git push &lt;remote&gt; &lt;branch&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;上传代码及快速合并<br>
+        $ git push &lt;remoto&gt; : &lt;branch/tag-name&gt;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;删除远程分支或标签<br>
+        $ git push --tags&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 上传所有标签 <br><br></article>
+    </div>
+  </div>
+</div>
+</body>
+</html>
