@@ -1,0 +1,38 @@
+.how{
+	background:#fff;
+}
+@media (max-width: 768px) {
+.notre {
+	margin-top: 1em;
+}
+.how{
+	padding-top: 60px;
+	padding-bottom: 1.4em;
+}
+
+#xf_banner{
+	margin-bottom: 0;
+}
+
+#head p {
+width: auto;
+font-weight: bold;
+font-size: 1.2em;
+}
+#logo { width: 20%; padding-top: 18px;}
+#logo img{ width: 100%;}
+
+.hl_tel{ display: block;}
+
+.NotreEquipe h6 {
+	width: 90%;
+}
+
+#tongji{ font-size: 1em;}
+
+}
+@media(max-width: 300px){
+	#head p{
+		font-size:12px;
+		}
+}

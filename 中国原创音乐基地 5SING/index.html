@@ -1,0 +1,612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>中国原创音乐基地 5SING</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/index_zong.js"></script>
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('*'); 
+</script> 
+<![endif]-->
+</head>
+
+<body>
+<div class="n_header">
+    <div class="header_bg">
+        <div class="header w960">
+            <div class="logo"> <a href="#"><img src="img/logo_img.png" alt="中国原创音乐基地" height="40" width="125"></a> </div>
+            <div class="serach rel">
+                <div class="seh_m">
+                    <input class="seh_v jsSearchAutoComplete" id="txtKey" placeholder="歌曲/歌单/会员" type="text">
+                    <a href="javascript:;" class="icon seh_b">搜 索</a> </div>
+                <div class="abs ser_tips" style="display: block;"></div>
+            </div>
+            <div class="top_nav">
+                <ul class="top_nav_join" id="userinfoshow">
+                </ul>
+                <ul class="top_nav_join" id="msgshow">
+                </ul>
+                <ul class="top_nav_login">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+                <ul id="upload">
+                    <li> <a class="nav_app_til" href="#"><i class="icon icon_upload"></i>上传</a>
+                        <ul class="upload_box">
+                            <li><a href="#">上传原创</a></li>
+                            <li><a href="#">上传翻唱</a></li>
+                            <li><a href="#">上传伴奏</a></li>
+                            <li><a href="#">歌曲管理</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="nav_app_til" href="javascript:;"><i class="icon icon_phone"></i>APP</a>
+                        <ul class="app_box">
+                            <li><img src="img/5singcode.png" alt=""></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav_bg">
+        <div class="nav w960">
+            <ul class="flx">
+                <li class="curr"><a href="#">首页</a></li>
+                <li><a href="#">原创</a></li>
+                <li><a href="#">翻唱</a></li>
+                <li><a href="#">伴奏</a></li>
+                <li><a href="#">榜单</a></li>
+                <li class="bar">|</li>
+                <li><a href="#">音乐人</a></li>
+                <li><a href="#">活动</a></li>
+                <li><a href="#">圈子</a></li>
+                <li><a href="#" target="_blank">音乐现场</a></li>
+                <li><a href="#" target="_blank">众筹</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--banner-->
+<div class="banner_bg wp100">
+    <div class="banner w960 auto clearfix">
+        <div class="banner_list fl rel" id="banner_list">
+            <ul style="left: 0px;">
+                <li> <a href="javascript:;" target="_blank"> <img src="http://www.miaov.com/student/syd/images/1.jpg" alt=""></a></li>
+                <li class="r"> <a href="javascript:;" target="_blank"> <img src="http://www.miaov.com/student/syd/images/1.jpg" alt=""></a></li>
+            </ul>
+            <div class="banner_action"> <a href="javascript:;" class="prev"><b class="news_up btn bni wh16" title="上一张"></b></a> <a href="javascript:;" class="next"><b class="news_down btn bni wh16" title="下一张"></b></a> </div>
+            <div class="banner_page abs">
+                <p class="auto" id="num"></p>
+            </div>
+        </div>
+        <div class="news fl">
+            <div class="news_tit clearfix">
+                <h2 class="bci btn fl">推荐咨询</h2>
+                <span class="fr clearfix"><a href="javascript:void(0)" class="news_up btn bni wh16 fl" id="news_prev" title="上一页">上一页</a><a href="javascript:void(0)" class="news_down btn bni wh16 fl" id="news_next" title="下一页">下一页</a></span></div>
+            <div class="news_list" id="news_list">
+                <ul class="fa_wh auto animation flipInY" db="1" style="display: block;">
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【专题】5月原创古风精选30首"><em>·</em>【专题】5月原创古风精选30首</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【专题】&lt;拾音&gt;旅行是每个故事的集合"><em>·</em>【专题】&lt;拾音&gt;旅行是每个故事的集合</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【活动】宁波E次元动漫嘉年华带你玩转六一"><em>·</em>【活动】宁波E次元动漫嘉年华带你玩转六一</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【歌评】只是当时已惘然——听《石楠小札》有感"><em>·</em>【歌评】只是当时已惘然——听《石楠小札》有感</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【专题】古韵之美——女声篇"><em>·</em>【专题】古韵之美——女声篇</a></li>
+                </ul>
+                <ul style="display: none;" class="fa_wh auto animation" db="0">
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【推荐】"颂今音乐"在京主办首届歌词创作高级研修班"><em>·</em>【推荐】"颂今音乐"在京主办首届歌词创作高级研修班</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【话题】520，就算是单身狗也要表白！"><em>·</em>【话题】520，就算是单身狗也要表白！</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【推荐】5sing音乐人强势加盟 川渝ACG动漫游戏展全新阵容公布"><em>·</em>【推荐】5sing音乐人强势加盟 川渝ACG动漫游戏展全新阵容公布</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【音乐节】端午，踩着音乐来旅行！"><em>·</em>【音乐节】端午，踩着音乐来旅行！</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【话题】有没有哪首歌曾感动过你？"><em>·</em>【话题】有没有哪首歌曾感动过你？</a></li>
+                </ul>
+                <ul style="display: none;" class="fa_wh auto animation" db="0">
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【活动】疾风之刃 我要燃尽一切！"><em>·</em>【活动】疾风之刃 我要燃尽一切！</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【推荐】你听过《他和她》的原唱吗？"><em>·</em>【推荐】你听过《他和她》的原唱吗？</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="阿来个人原创专辑《为你而来》5sing众筹首发"><em>·</em>阿来个人原创专辑《为你而来》5sing众筹首发</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【专题】4月原创古风精选30首"><em>·</em>【专题】4月原创古风精选30首</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【歌评】放歌云中鹤  画亭入乐声"><em>·</em>【歌评】放歌云中鹤  画亭入乐声</a></li>
+                </ul>
+                <ul style="display: none;" class="fa_wh auto animation" db="0">
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【活动】是时候该见面了！谁来直播，你说了算！"><em>·</em>【活动】是时候该见面了！谁来直播，你说了算！</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【活动】长三角音乐节三足鼎立，你选择困难了吗？"><em>·</em>【活动】长三角音乐节三足鼎立，你选择困难了吗？</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【专题】致童年之日翻动漫金曲"><em>·</em>【专题】致童年之日翻动漫金曲</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【专题】声控日记"><em>·</em>【专题】声控日记</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【活动】摩登天空打造京沪双城音乐现场"><em>·</em>【活动】摩登天空打造京沪双城音乐现场</a></li>
+                </ul>
+                <ul style="display: none;" class="fa_wh auto animation" db="0">
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【活动】萤火虫动漫嘉年华5sing专场LIVE五一来袭!"><em>·</em>【活动】萤火虫动漫嘉年华5sing专场LIVE五一来袭!</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【专题】我和5sing不得不说的那些事儿"><em>·</em>【专题】我和5sing不得不说的那些事儿</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【话题】说说你最喜欢的词作"><em>·</em>【话题】说说你最喜欢的词作</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【专题】3月原创古风精选30首"><em>·</em>【专题】3月原创古风精选30首</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="「拾音」第二期主题创作活动启动"><em>·</em>「拾音」第二期主题创作活动启动</a></li>
+                </ul>
+                <ul style="display: none;" class="fa_wh auto animation" db="0">
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【专题】广播剧歌曲精选40首"><em>·</em>【专题】广播剧歌曲精选40首</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="史上最豪华奖品！倩女2翻唱填词大赛火热开启"><em>·</em>史上最豪华奖品！倩女2翻唱填词大赛火热开启</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【专题】超越友情的羁绊"><em>·</em>【专题】超越友情的羁绊</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="【话题】你最喜欢的日翻歌手是？"><em>·</em>【话题】你最喜欢的日翻歌手是？</a></li>
+                    <li><a href="javascript:;" class="ell" target="_blank" title="2015苏州怪兽朋克音乐节，等你来躁！"><em>·</em>2015苏州怪兽朋克音乐节，等你来躁！</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--内容部分-->
+<div class="content w960 auto">
+    <div class="c_box art_box bgwh mt30">
+        <div class="song_tit clearfix"> <span class="fl clearfix"> <b class="bci btn fl wh30 tit_art_icon"></b>
+            <h2 class="f18 yhei fl">热门音乐人</h2>
+            </span> <a href="javascript:;" class="fr b gr"><i class="ico fl wh16 bni"></i>More</a> </div>
+        <div class="artist_info clearfix" id="music_l">
+            <dl class="artist_first fl">
+                <dt class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/big.png" alt="应嘉俐"></a><span class="abs"><b class="btn bni PlayerWidget_play" songinfo="yc$2624562" title="播放"></b>播放热门歌曲</span></dt>
+                <dd class="art_d1 clearfix"><strong class="fl"><a href="javascript:;" class="f14" target="_blank">应嘉俐</a></strong><em class="g9 fr"></em></dd>
+                <dd class="cell_bk lh18">唱作才女</dd>
+            </dl>
+            <ul class="artist_list fl">
+                <li><span class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/i2.jpg" alt="郑虹Hong"></a><span class="abs">播放热门歌曲<b class="btn bni PlayerWidget_play" songinfo="yc$2832210" title="播放"></b></span></span><strong><a href="javascript:;" class="ell f_gb" target="_blank">郑虹Hong</a></strong></li>
+                <li><span class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/i3.jpg" alt="彭野新儿歌"></a><span class="abs">播放热门歌曲<b class="btn bni PlayerWidget_play" songinfo="yc$2816433" title="播放"></b></span></span><strong><a href="javascript:;" class="ell f_gb" target="_blank">彭野新儿歌</a></strong></li>
+                <li><span class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/i4.jpg"></a><span class="abs">播放热门歌曲<b class="btn bni PlayerWidget_play" songinfo="fc$14011059" title="播放"></b></span></span><strong><a href="javascript:;" class="ell f_gb" target="_blank">崔二丫Erya。</a></strong></li>
+                <li><span class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/i5.jpg"></a><span class="abs">播放热门歌曲<b class="btn bni PlayerWidget_play" songinfo="yc$2823345" title="播放"></b></span></span><strong><a href="javascript:;" class="ell f_gb" target="_blank">严璞@娃娃公主</a></strong></li>
+                <li><span class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/i6.jpg" alt="性感的糖果"></a><span class="abs">播放热门歌曲<b class="btn bni PlayerWidget_play" songinfo="yc$2830101" title="播放"></b></span></span><strong><a href="javascript:;" class="ell f_gb" target="_blank">性感的糖果</a></strong></li>
+                <li><span class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/i7.jpg" alt="墨玖玖墨Mokyio"></a><span class="abs">播放热门歌曲<b class="btn bni PlayerWidget_play" songinfo="yc$2777545" title="播放"></b></span></span><strong><a href="javascript:;" class="ell f_gb" target="_blank">墨玖玖墨Mokyio</a></strong></li>
+                <li><span class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/i8.jpg" alt="王翰 (Han)"></a><span class="abs">播放热门歌曲<b class="btn bni PlayerWidget_play" songinfo="yc$2780618" title="播放"></b></span></span><strong><a href="javascript:;" class="ell f_gb" target="_blank">王翰 (Han)</a></strong></li>
+                <li><span class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/i9.jpg" alt="乌拉多恩"></a><span class="abs">播放热门歌曲<b class="btn bni PlayerWidget_play" songinfo="yc$2828029" title="播放"></b></span></span><strong><a href="javascript:;" class="ell f_gb" target="_blank">乌拉多恩</a></strong></li>
+                <li><span class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/i10.jpg" alt="三无MarBlue"></a><span class="abs">播放热门歌曲<b class="btn bni PlayerWidget_play" songinfo="fc$14162238" title="播放"></b></span></span><strong><a href="http://5sing.kugou.com/5621105" class="ell f_gb" target="_blank">三无MarBlue</a></strong></li>
+                <li><span class="artist_pic rel"><a href="javascript:;" class="a_p_link" target="_blank"><img src="img/i11.jpg" alt="王晓旭Guitar"></a><span class="abs">播放热门歌曲<b class="btn bni PlayerWidget_play" songinfo="yc$2811707" title="播放"></b></span></span><strong><a href="javascript:;" class="ell f_gb" target="_blank">王晓旭Guitar</a></strong></li>
+            </ul>
+        </div>
+    </div>
+    <div class="live_wrap mt30">
+        <div class="live_wrap_hd">
+            <div class="live_wrap_hd_l"><i></i>
+                <h2>音乐现场</h2>
+            </div>
+            <a href="javascript:;" class="live_open" target="_blank"><i></i>更多精彩</a></div>
+        <div class="live_wrap_bd" id="live_wrap">
+            <dl class="living">
+                <dt><span class="mark"></span><a href="javascript:;" target="_blank" title="进入直播现场"><img src="img/s1.jpg"></a><a class="a_class" href="javascript:;" target="_blank" title="进入直播现场"><i></i></a></dt>
+                <dd class="liver"><a href="javascript:;" target="_blank">LIVE精彩回顾</a></dd>
+                <dd class="liver_r"><i></i>29个观众</dd>
+                <dd class="desc" title=""></dd>
+            </dl>
+            <dl class="live_notice">
+                <dt><span class="mark">预告</span><a href="javascript:;" target="_blank" title="进入直播现场"><img src="img/s2.jpg"></a><a class="a_class" href="javascript:;" target="_blank" title="进入直播现场"><i></i></a></dt>
+                <dd class="liver"><a href="javascript:;" target="_blank">莫辣</a></dd>
+                <dd class="liver_r"><i></i>6月4号  20:00-22:00</dd>
+                <dd class="desc" title="用声音告诉你，什么叫活色生香。">用声音告诉你，什么叫活色生香。</dd>
+            </dl>
+            <dl class="live_notice">
+                <dt><span class="mark">预告</span><a href="javascript:;" target="_blank" title="进入直播现场"><img src="img/s3.jpg"></a><a style="display: none;" class="a_class" href="javascript:;" target="_blank" title="进入直播现场"><i></i></a></dt>
+                <dd class="liver"><a href="javascript:;" target="_blank">妙语清歌-婳烙微</a></dd>
+                <dd class="liver_r"><i></i>6月4号  20:00-21:30</dd>
+                <dd class="desc" title="会唱会蹦会卖萌的饼，绝对正品仅此一块~">会唱会蹦会卖萌的饼，绝对正品...</dd>
+            </dl>
+            <dl class="live_notice">
+                <dt><span class="mark">预告</span><a href="javascript:;" target="_blank" title="进入直播现场"><img src="img/s4.jpg"></a><a class="a_class" href="javascript:;" target="_blank" title="进入直播现场"><i></i></a></dt>
+                <dd class="liver"><a href="javascript:;" target="_blank">梨花少.</a></dd>
+                <dd class="liver_r"><i></i>6月4号  19:50-21:00</dd>
+                <dd class="desc" title=""></dd>
+            </dl>
+        </div>
+    </div>
+    <!--原创推荐-->
+    <div class="c_box clearfix mt30">
+        <div class="song_recomm bgwh fl">
+            <div class="song_yc song_box rel">
+                <div class="song_tit clearfix"> <span class="fl clearfix"> <b class="bci btn fl wh30"></b>
+                    <h2 class="f18 yhei fl">原创推荐</h2>
+                    <a href="javascript:void(0)" class="clearfix fl player_all PlayerWidget_play" title="播放全部歌曲"><b class="bni btn fl"></b>播放全部</a> </span> </div>
+                <div class="song_list yc_list" id="start_song_list"><dl class="clearfix"><dt><strong class="sl_name"><a href="http://5sing.kugou.com/yc/14539517.html" class="f_gb" target="_blank" title="『Red Velvet°』Dumb Dumb『自和声』">『Red Velvet°』Dumb Dumb『自和声』</a></strong></dt><dd class="sl_d1"><a href="http://5sing.kugou.com/18430055" class="f_g9 ell" target="_blank">蕊蕊蕊蕊！</a></dd><dd class="sl_d2 g9"><span class="b">13377</span>次播放</dd><dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14539517" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd></dl><dl class="clearfix"><dt><strong class="sl_name"><a href="http://5sing.kugou.com/yc/14540628.html" class="f_gb" target="_blank" title="给我一个理由忘记">给我一个理由忘记</a></strong></dt><dd class="sl_d1"><a href="http://5sing.kugou.com/8456794" class="f_g9 ell" target="_blank">SupEr_CC</a></dd><dd class="sl_d2 g9"><span class="b">24534</span>次播放</dd><dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14540628" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd></dl><dl class="clearfix"><dt><strong class="sl_name"><a href="http://5sing.kugou.com/yc/14494506.html" class="f_gb" target="_blank" title="タユタ w/shoko">タユタ w/shoko</a></strong></dt><dd class="sl_d1"><a href="http://5sing.kugou.com/9986623" class="f_g9 ell" target="_blank">妖精桑3000</a></dd><dd class="sl_d2 g9"><span class="b">4239</span>次播放</dd><dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14494506" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd></dl><dl class="clearfix"><dt><strong class="sl_name"><a href="http://5sing.kugou.com/yc/14528033.html" class="f_gb" target="_blank" title="《百俊图 · 烟波天客》ft. 萧忆情&amp;烟花show">《百俊图 · 烟波天客》ft. 萧忆情&amp;烟花show</a></strong></dt><dd class="sl_d1"><a href="http://5sing.kugou.com/14113620" class="f_g9 ell" target="_blank">-贰萬-</a></dd><dd class="sl_d2 g9"><span class="b">9876</span>次播放</dd><dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14528033" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd></dl><dl class="clearfix"><dt><strong class="sl_name"><a href="http://5sing.kugou.com/yc/14348385.html" class="f_gb" target="_blank" title="On &amp; On ［HBD 山由］">On &amp; On ［HBD 山由］</a></strong></dt><dd class="sl_d1"><a href="http://5sing.kugou.com/6356301" class="f_g9 ell" target="_blank">_Ven_</a></dd><dd class="sl_d2 g9"><span class="b">2742</span>次播放</dd><dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14348385" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd></dl><dl class="clearfix"><dt><strong class="sl_name"><a href="http://5sing.kugou.com/yc/14526841.html" class="f_gb" target="_blank" title="兔子先生">兔子先生</a></strong></dt><dd class="sl_d1"><a href="http://5sing.kugou.com/7790661" class="f_g9 ell" target="_blank">猫大可</a></dd><dd class="sl_d2 g9"><span class="b">59277</span>次播放</dd><dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14526841" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd></dl><dl class="clearfix"><dt><strong class="sl_name"><a href="http://5sing.kugou.com/yc/14525102.html" class="f_gb" target="_blank" title="【古】客心茶 词：紫梦知秋">【古】客心茶 词：紫梦知秋</a></strong></dt><dd class="sl_d1"><a href="http://5sing.kugou.com/2045462" class="f_g9 ell" target="_blank">曾小cee</a></dd><dd class="sl_d2 g9"><span class="b">10233</span>次播放</dd><dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14525102" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd></dl><dl class="clearfix"><dt><strong class="sl_name"><a href="http://5sing.kugou.com/yc/14520703.html" class="f_gb" target="_blank" title="【SNSD】You think">【SNSD】You think</a></strong></dt><dd class="sl_d1"><a href="http://5sing.kugou.com/25903315" class="f_g9 ell" target="_blank">o金牛鱼o</a></dd><dd class="sl_d2 g9"><span class="b">11961</span>次播放</dd><dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14520703" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd></dl><dl class="clearfix"><dt><strong class="sl_name"><a href="http://5sing.kugou.com/yc/14510608.html" class="f_gb" target="_blank" title="TRUST YOU">TRUST YOU</a></strong></dt><dd class="sl_d1"><a href="http://5sing.kugou.com/445755" class="f_g9 ell" target="_blank">Jalam</a></dd><dd class="sl_d2 g9"><span class="b">6939</span>次播放</dd><dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14510608" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd></dl><dl class="clearfix"><dt><strong class="sl_name"><a href="http://5sing.kugou.com/yc/14449101.html" class="f_gb" target="_blank" title="Hold Me">Hold Me</a></strong></dt><dd class="sl_d1"><a href="http://5sing.kugou.com/8311486" class="f_g9 ell" target="_blank">井开元六佳音</a></dd><dd class="sl_d2 g9"><span class="b">2898</span>次播放</dd><dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14449101" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd></dl></div>
+                <span class="refresh_action abs"><a href="javascript:void(0)" id="RefreshYc" class="clearfix refresh_btn" title="换一批歌曲"><b class="bni btn fl wh14"></b>换一批</a></span> </div>
+            <div class="song_fc song_box rel">
+                <div class="song_tit clearfix"> <span class="fl clearfix"> <b class="bci btn fl wh30 tit_fc_icon"></b>
+                    <h2 class="f18 yhei fl">翻唱推荐</h2>
+                    <a href="javascript:void(0)" songinfo="fc$14126048$fc$14197495$fc$14185314$fc$14136817$fc$13953578$fc$14123854$fc$14134630$fc$14156977$fc$14024467$fc$14099846" class="clearfix fl player_all PlayerWidget_play" title="播放全部歌曲"><b class="bni btn fl"></b>播放全部</a> </span> </div>
+                <div class="song_list yc_list" id="opasite_song_list">
+                    <dl class="clearfix">
+                        <dt><strong class="sl_name"><a href="http://5sing.kugou.com/fc/14126048.html" class="f_gb" target="_blank" title="[DOK2/BOBBY/MASTAWU]Come Here Feat Payam1.Nanda">[DOK2/BOBBY/MASTAWU]Come Here Feat Payam1.Nanda</a></strong></dt>
+                        <dd class="sl_d1"><a href="javascript:;" class="f_g9 ell" target="_blank">§调§鸡Tothe低</a></dd>
+                        <dd class="sl_d2 g9"><span class="b">1764</span>次播放</dd>
+                        <dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14126048" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><strong class="sl_name"><a href="javascript:;" class="f_gb" target="_blank" title="iphone经典铃声版《爱是怀疑》">iphone经典铃声版《爱是怀疑》</a></strong></dt>
+                        <dd class="sl_d1"><a href="javascript:;" class="f_g9 ell" target="_blank">打扰一下乐团</a></dd>
+                        <dd class="sl_d2 g9"><span class="b">12579</span>次播放</dd>
+                        <dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14197495" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><strong class="sl_name"><a href="javascript:;" class="f_gb" target="_blank" title="The heart wants what it wants">The heart wants what it wants</a></strong></dt>
+                        <dd class="sl_d1"><a href="javascript:;" class="f_g9 ell" target="_blank">britneylee</a></dd>
+                        <dd class="sl_d2 g9"><span class="b">5274</span>次播放</dd>
+                        <dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14185314" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><strong class="sl_name"><a href="javascript:;" class="f_gb" target="_blank" title="【日】ラピスラズリ">【日】ラピスラズリ</a></strong></dt>
+                        <dd class="sl_d1"><a href="javascript:;" class="f_g9 ell" target="_blank">珉珉的猫咪</a></dd>
+                        <dd class="sl_d2 g9"><span class="b">9981</span>次播放</dd>
+                        <dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14136817" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><strong class="sl_name"><a href="javascript:;" class="f_gb" target="_blank" title="【第十一弹】[剑三剧情] 解得红尘似一人">【第十一弹】[剑三剧情] 解得红尘似一人</a></strong></dt>
+                        <dd class="sl_d1"><a href="javascript:;" class="f_g9 ell" target="_blank">南歌子工作室</a></dd>
+                        <dd class="sl_d2 g9"><span class="b">17331</span>次播放</dd>
+                        <dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$13953578" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><strong class="sl_name"><a href="javascript:;" class="f_gb" target="_blank" title="为你的寂寞唱歌（ft: JudeChiu和声）">为你的寂寞唱歌（ft: JudeChiu和声）</a></strong></dt>
+                        <dd class="sl_d1"><a href="javascript:;" class="f_g9 ell" target="_blank">阿花Gee●L</a></dd>
+                        <dd class="sl_d2 g9"><span class="b">4680</span>次播放</dd>
+                        <dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14123854" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><strong class="sl_name"><a href="javascript:;" class="f_gb" target="_blank" title="【iu&amp;瑟雍】唠叨-with.牛鱼">【iu&amp;瑟雍】唠叨-with.牛鱼</a></strong></dt>
+                        <dd class="sl_d1"><a href="javascript:;" class="f_g9 ell" target="_blank">伯恩∨</a></dd>
+                        <dd class="sl_d2 g9"><span class="b">5142</span>次播放</dd>
+                        <dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14134630" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><strong class="sl_name"><a href="javascript:;" class="f_gb" target="_blank" title="【M】Uptown Funk 女版翻唱OH YEAH!!!XD">【M】Uptown Funk 女版翻唱OH YEAH!!!XD</a></strong></dt>
+                        <dd class="sl_d1"><a href="javascript:;" class="f_g9 ell" target="_blank">Melodia</a></dd>
+                        <dd class="sl_d2 g9"><span class="b">7458</span>次播放</dd>
+                        <dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14156977" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><strong class="sl_name"><a href="javascript:;" class="f_gb" target="_blank" title="放心去飞">放心去飞</a></strong></dt>
+                        <dd class="sl_d1"><a href="javascript:;" class="f_g9 ell" target="_blank">charlie_卡布叻</a></dd>
+                        <dd class="sl_d2 g9"><span class="b">42174</span>次播放</dd>
+                        <dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14024467" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt><strong class="sl_name"><a href="javascript:;" class="f_gb" target="_blank" title="イマジネイション">イマジネイション</a></strong></dt>
+                        <dd class="sl_d1"><a href="javascript:;" class="f_g9 ell" target="_blank">ARIS.</a></dd>
+                        <dd class="sl_d2 g9"><span class="b">19284</span>次播放</dd>
+                        <dd class="sl_d3"><a href="javascript:void(0)" songinfo="fc$14099846" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></dd>
+                    </dl>
+                </div>
+                <span class="refresh_action abs"><a href="javascript:void(0)" id="RefreshFc" class="clearfix refresh_btn" title="换一批歌曲"><b class="bni btn fl wh14"></b>换一批</a></span> </div>
+        </div>
+        <div class="song_rank bgwh fl" id="nav_song">
+            <div class="song_rank_tit bci clearfix"> <a href="javascript:void(0)" songinfo="yc$2835981$yc$2836293$yc$2836137$yc$2836071$yc$2835685$yc$2835690$yc$2727144$yc$2835259$yc$2831226$yc$2834134" class="clearfix fl player_all PlayerWidget_play" title="播放全部歌曲"><b class="bni btn fl"></b>播放全部</a>
+                <ul class="song_rank_nav clearfix" id="nav_l">
+                    <li class="yhei song_rank_nav_clo"><a href="javascript:void(0)">原创候选</a></li>
+                    <li class="yhei"><a href="javascript:void(0)">翻唱候选</a></li>
+                    <li class="yhei"><a href="javascript:void(0)">原创排行榜</a></li>
+                </ul>
+            </div>
+            <div id="adiv">
+                <div class="s_r_box s_r_ycbox" style="display: block;">
+                    <div class="s_r_list" id="musicList_01">
+                        <ol class="animation" dr="1" id="yc$2835981$yc$2836293$yc$2836137$yc$2836071$yc$2835685$yc$2835690$yc$2727144$yc$2835259$yc$2831226$yc$2834134" style="display:block" ;="">
+                            <li> <em class="s_r_pic"><img src="img/b1.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="遇萤【纯歌版】" target="_blank">遇萤【纯歌版】</a> <a href="javascript:;" class="fr c9" target="_blank">熙影CRITTY</a> <span class="g9"><span class="b">459</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2835981" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/b2.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="雪舞——《以梦为马》专辑收录" target="_blank">雪舞——《以梦为马》专辑收录</a> <a href="javascript:;" class="fr c9" target="_blank">银临</a> <span class="g9"><span class="b">5010</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2836293" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/b3.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="《玉蟾灵心》 南瑾天" target="_blank">《玉蟾灵心》 南瑾天</a> <a href="javascript:;" class="fr c9" target="_blank">擎天Sir</a> <span class="g9"><span class="b">1215</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2836137" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/b4.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="我的他加她" target="_blank">我的他加她</a> <a href="javascript:;" class="fr c9" target="_blank">王 博 文</a> <span class="g9"><span class="b">495</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2836071" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/b5.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="记?念-Piano Version-" target="_blank">记?念-Piano Version-</a> <a href="javascript:;" class="fr c9" target="_blank">Braska</a> <span class="g9"><span class="b">5268</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2835685" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/b6.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="未" target="_blank">未</a> <a href="javascript:;" class="fr c9" target="_blank">Iam钟声</a> <span class="g9"><span class="b">213</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2835690" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/b7.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="完美的错觉" target="_blank">完美的错觉</a> <a href="javascript:;" class="fr c9" target="_blank">Evelyn李想</a> <span class="g9"><span class="b">8658</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2727144" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/b8.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【原创五】入梦" target="_blank">【原创五】入梦</a> <a href="javascript:;" class="fr c9" target="_blank">V黄依玲V</a> <span class="g9"><span class="b">1500</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2835259" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/b9.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="黎明破晓后" target="_blank">黎明破晓后</a> <a href="javascript:;" class="fr c9" target="_blank">歌手紫菱</a> <span class="g9"><span class="b">675</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2831226" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/b10.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="『倾歌流音-原创』言君 to司马锐&amp;慕容枫同人歌" target="_blank">『倾歌流音-原创』言君 to司马锐&amp;慕容枫..</a> <a href="javascript:;" class="fr c9" target="_blank">倾歌流音社团</a> <span class="g9"><span class="b">3459</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2834134" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                        <ol class="animation" dr="0" id="yc$2834807$yc$2833725$yc$2833252$yc$2833123$yc$2834410$yc$2834283$yc$2834288$yc$2823216$yc$2824613$yc$2833840" style="display:none" ;="">
+                            <li> <em class="s_r_pic"><img src="img/h1.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="星星摇篮曲" target="_blank">星星摇篮曲</a> <a href="javascript:;" class="fr c9" target="_blank">方糖泡泡</a> <span class="g9"><span class="b">1395</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2834807" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/h2.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="菌裂" target="_blank">菌裂</a> <a href="javascript:;" class="fr c9" target="_blank">希望索任合资</a> <span class="g9"><span class="b">1014</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2833725" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/h3.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【纯音乐版】掌中铃" target="_blank">【纯音乐版】掌中铃</a> <a href="javascript:;" class="fr c9" target="_blank">南辰巽</a> <span class="g9"><span class="b">1617</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2833252" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/h4.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【洛天依】Attempt【初原创】" target="_blank">【洛天依】Attempt【初原创】</a> <a href="javascript:;" class="fr c9" target="_blank">Pelokio☆P子</a> <span class="g9"><span class="b">1617</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2833123" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/h5.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="我们的故事" target="_blank">我们的故事</a> <a href="javascript:;" class="fr c9" target="_blank">徐子崴</a> <span class="g9"><span class="b">1245</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2834410" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/h6.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="姐辞职了" target="_blank">姐辞职了</a> <a href="javascript:;" class="fr c9" target="_blank">铁血宅男</a> <span class="g9"><span class="b">960</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2834283" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/h7.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【新酿】我爱你" target="_blank">【新酿】我爱你</a> <a href="javascript:;" class="fr c9" target="_blank">夏墨萧音音乐团队</a> <span class="g9"><span class="b">1032</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2834288" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/h8.png"></em> <span class="rank_name"> <a href="javascript:;" "="" class="fl ell" title="不屈的魔法 —— 《全职法师》小说主题曲" target="_blank">不屈的魔法 —— 《全职法师》小说主题曲</a> <a href="javascript:;" "="" class="fr c9" target="_blank">阅文集团</a> <span class="g9"><span class="b">4785</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2823216" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/h9.jpg"></em> <span class="rank_name"> <a href="javascript:;" "="" class="fl ell" title="楚云深【i2star专辑《千年调》收录曲】" target="_blank">楚云深【i2star专辑《千年调》收录曲】</a> <a href="javascript:;" "="" class="fr c9" target="_blank">i2star</a> <span class="g9"><span class="b">43959</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2824613" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/h10.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【不老的少年】你一生的故事 唱：以冬" target="_blank">【不老的少年】你一生的故事 唱：以冬</a> <a href="javascript:;" class="fr c9" target="_blank">顾卿</a> <span class="g9"><span class="b">1500</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2833840" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                        <ol class="animation" dr="0" id="yc$2833475$yc$2830632$yc$2832297$yc$2832026$yc$2832689$yc$2829478$yc$2832502$yc$2832476$yc$2832360$yc$2831864" style="display:none" ;="">
+                            <li> <em class="s_r_pic"><img src="img/n1.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="灯塔情歌" target="_blank">灯塔情歌</a> <a href="javascript:;" class="fr c9" target="_blank">晟宇Sunrise</a> <span class="g9"><span class="b">2481</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2833475" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/n2.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="庄心妍-耳旁风" target="_blank">庄心妍-耳旁风</a> <a href="javascript:;" class="fr c9" target="_blank">高川东</a> <span class="g9"><span class="b">1578</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2830632" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/n3.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="心城_临川唤渡" target="_blank">心城_临川唤渡</a> <a href="javascript:;" class="fr c9" target="_blank">临川唤渡音乐社。</a> <span class="g9"><span class="b">3957</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2832297" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/n4.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="You are Beautiful" target="_blank">You are Beautiful</a> <a href="javascript:;" class="fr c9" target="_blank">【三生】某某</a> <span class="g9"><span class="b">1251</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2832026" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/n5.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【三体】歌者·时间童话" target="_blank">【三体】歌者·时间童话</a> <a href="javascript:;" class="fr c9" target="_blank">无水醋酸铜</a> <span class="g9"><span class="b">2553</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2832689" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/n6.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="you and me" target="_blank">you and me</a> <a href="javascript:;" class="fr c9" target="_blank">旋律D波动</a> <span class="g9"><span class="b">8208</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2829478" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/n7.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【又三年】 ——只送给我自己" target="_blank">【又三年】 ——只送给我自己</a> <a href="javascript:;" class="fr c9" target="_blank">西瓜JUN</a> <span class="g9"><span class="b">4317</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2832502" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/n8.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="Apple郝婉彤《想哭就微笑》编曲作品" target="_blank">Apple郝婉彤《想哭就微笑》编曲作品</a> <a href="javascript:;" class="fr c9" target="_blank">余雷Ray</a> <span class="g9"><span class="b">1113</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2832476" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/n9.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【青青周年庆】菩提牢-伦桑＆梦璟saya（纯歌版）" target="_blank">【青青周年庆】菩提牢-伦桑＆梦璟saya（纯..</a> <a href="javascript:;" class="fr c9" target="_blank">青青子佩音乐团队</a> <span class="g9"><span class="b">8244</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2832360" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/n10.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="《最珍贵》- 莫智钦" target="_blank">《最珍贵》- 莫智钦</a> <a href="javascript:;" class="fr c9" target="_blank">莫智钦</a> <span class="g9"><span class="b">1752</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2831864" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                        <ol class="animation" dr="0" id="yc$2832210$yc$2827617$yc$2819425$yc$2832035$yc$2831957$yc$2831608$yc$2797155$yc$2819227$yc$2829086$yc$2828361" style="display:none" ;="">
+                            <li> <em class="s_r_pic"><img src="img/k1.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="电影票根" target="_blank">电影票根</a> <a href="javascript:;" class="fr c9" target="_blank">郑虹Hong</a> <span class="g9"><span class="b">951</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2832210" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/k2.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="美美的" target="_blank">美美的</a> <a href="javascript:;" class="fr c9" target="_blank">胡丹丹（Hebe Hu）</a> <span class="g9"><span class="b">1035</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2827617" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/k3.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="让我为你唱首歌" target="_blank">让我为你唱首歌</a> <a href="javascript:;" class="fr c9" target="_blank">TOMO乐团</a> <span class="g9"><span class="b">690</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2819425" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/k4.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="《致我们的后青春》" target="_blank">《致我们的后青春》</a> <a href="javascript:;" class="fr c9" target="_blank">天空部落MUSIC</a> <span class="g9"><span class="b">489</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2832035" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/k5.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="旅人" target="_blank">旅人</a> <a href="javascript:;" class="fr c9" target="_blank">燃烧又熄灭</a> <span class="g9"><span class="b">336</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2831957" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/k6.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="鱼不跃" target="_blank">鱼不跃</a> <a href="javascript:;" class="fr c9" target="_blank">随风而落…</a> <span class="g9"><span class="b">4629</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2831608" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/k7.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【尘韵||原创】画魂" target="_blank">【尘韵||原创】画魂</a> <a href="javascript:;" class="fr c9" target="_blank">尘韵清魂の杂货铺</a> <span class="g9"><span class="b">8199</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2797155" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/k8.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="龙奔 - - 下辈子做你的手机" target="_blank">龙奔 - - 下辈子做你的手机</a> <a href="javascript:;" class="fr c9" target="_blank">龙奔</a> <span class="g9"><span class="b">777</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2819227" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/k9.png"></em> <span class="rank_name"> <a href="avascript:;" class="fl ell" title="【精选】致舞者-林音炫" target="_blank">【精选】致舞者-林音炫</a> <a href="avascript:;" class="fr c9" target="_blank">林音炫</a> <span class="g9"><span class="b">513</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2829086" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/k10.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="为你而疯，为你而狂" target="_blank">为你而疯，为你而狂</a> <a href="avascript:;" class="fr c9" target="_blank">名将音乐</a> <span class="g9"><span class="b">822</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2828361" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                        <ol class="animation" dr="0" id="yc$2828130$yc$2831514$yc$2825212$yc$2830832$yc$2824900$yc$2818975$yc$2830477$yc$2830101$yc$2829664$yc$2829679" style="display:none" ;="">
+                            <li> <em class="s_r_pic"><img src="img/u1.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="现实给了我什么" target="_blank">现实给了我什么</a> <a href="javascript:;" class="fr c9" target="_blank">辽阳小魁录音棚</a> <span class="g9"><span class="b">621</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2828130" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/u2.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="老巷" target="_blank">老巷</a> <a href="javascript:;" class="fr c9" target="_blank">王宇晗</a> <span class="g9"><span class="b">1764</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2831514" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/u3.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【面纱】——异域风" target="_blank">【面纱】——异域风</a> <a href="javascript:;" class="fr c9" target="_blank">萤火音乐社</a> <span class="g9"><span class="b">1401</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2825212" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/u4.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="伶仃谣" target="_blank">伶仃谣</a> <a href="javascript:;" class="fr c9" target="_blank">狐离</a> <span class="g9"><span class="b">3789</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2830832" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/u5.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【曲辞|原创】望生-剑三（纯歌版）" target="_blank">【曲辞|原创】望生-剑三（纯歌版）</a> <a href="javascript:;" class="fr c9" target="_blank">曲辞未归音乐社</a> <span class="g9"><span class="b">10167</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2824900" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/u6.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="晚安MR.LEE-卜小可作品" target="_blank">晚安MR.LEE-卜小可作品</a> <a href="javascript:;" class="fr c9" target="_blank">βσβσ</a> <span class="g9"><span class="b">1374</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2818975" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/u7.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="入俗" target="_blank">入俗</a> <a href="javascript:;" class="fr c9" target="_blank">第十二亩地</a> <span class="g9"><span class="b">945</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2830477" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/u8.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="hello,hello" target="_blank">hello,hello</a> <a href="javascript:;" class="fr c9" target="_blank">性感的糖果</a> <span class="g9"><span class="b">2037</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2830101" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/u9.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="冷战" target="_blank">冷战</a> <a href="javascript:;" class="fr c9" target="_blank">Ian不是铁杆</a> <span class="g9"><span class="b">1299</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2829664" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/u10.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="花满楼—吕薇" target="_blank">花满楼—吕薇</a> <a href="javascript:;" class="fr c9" target="_blank">玉镯儿</a> <span class="g9"><span class="b">1884</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2829679" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                    </div>
+                    <div class="song_rank_page clearfix"><span class="clearfix fr db"><a id="prevPage1" href="javascript:void(0)" class="news_up btn bni wh16 fl prevPage" title="上一页">上一页</a> <a id="nextPage1" href="javascript:void(0)" class="news_down btn bni wh16 fl nextPage" title="下一页">下一页</a></span></div>
+                </div>
+                <div class="s_r_box s_r_fcbox" style="display: none;">
+                    <div class="s_r_list" id="musicList_02">
+                        <ol class="animation" dr="1" id="fc$14201602$fc$14219228$fc$14219457$fc$14178876$fc$14217069$fc$14202246$fc$14206773$fc$14175406$fc$14213228$fc$14191939" style="display:block" ;="">
+                            <li> <em class="s_r_pic"><img src="img/e1.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="如果有来生（唱：雪滺）" target="_blank">如果有来生（唱：雪滺）</a> <a href="javascript:;" class="fl" target="_blank">Cry杨</a> <span class="g9"><span class="b">225</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14201602" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/e2.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="祈りの彼方" target="_blank">祈りの彼方</a> <a href="javascript:;" class="fl" target="_blank">WMUL</a> <span class="g9"><span class="b">198</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14219228" class="btn bni pla_btn PlayerWidget_play" title="播放">试听</a> </li>
+                       y     <li> <em class="s_r_pic"><img src="img/e3.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【Ayo】All About The Bass. ft寄明" target="_blank">【Ayo】All About The Bass. ft寄明</a> <a href="javascript:;" class="fl" target="_blank">Ayo Torres</a> <span class="g9"><span class="b">123</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14219457" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/e4.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="画情【致如意" target="_blank">画情【致如意</a> <a href="javascript:;" class="fl" target="_blank">咩了个咩咩咩咩咩</a> <span class="g9"><span class="b">282</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14178876" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/e5.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="心动" target="_blank">心动</a> <a href="javascript:;" class="fl" target="_blank">凉穗</a> <span class="g9"><span class="b">783</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14217069" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/e6.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="See you again" target="_blank">See you again</a> <a href="javascript:;" class="fl" target="_blank">国际黑</a> <span class="g9"><span class="b">402</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14202246" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/e7.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="司宵子 ft:阿南sara" target="_blank">司宵子 ft:阿南sara</a> <a href="javascript:;" class="fl" target="_blank">卷子入侵</a> <span class="g9"><span class="b">531</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14206773" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/e8.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="尿急调【原曲：Trouble Maker】【FT：一字糖】" target="_blank">尿急调【原曲：Trouble Maker】【FT：一字..</a> <a href="javascript:;" class="fl" target="_blank">天芒.</a> <span class="g9"><span class="b">873</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14175406" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/e9.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【数码宝贝】Butterfly-乐队Cover+被选中的八个女子" target="_blank">【数码宝贝】Butterfly-乐队Cover+被选中..</a> <a href="javascript:;" class="fl" target="_blank">╭★S.七玥、</a> <span class="g9"><span class="b">7602</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14213228" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/e10.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【WANDS】世界が終わるまでは…" target="_blank">【WANDS】世界が終わるまでは…</a> <a href="javascript:;" class="fl" target="_blank">Natsuの風</a> <span class="g9"><span class="b">591</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14191939" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                        <ol class="animation" dr="0" id="fc$14200543$fc$14218552$fc$14217854$fc$14215661$fc$14217063$fc$14211807$fc$14215755$fc$14215956$fc$14206455$fc$14205753" style="display:none" ;="">
+                            <li> <em class="s_r_pic"><img src="img/d1.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="[6.1快乐]童年收 - 澈南嘉舞 " target="_blank">[6.1快乐]童年收 - 澈南嘉舞 </a> <a href="javascript:;" class="fl" target="_blank">澈心酱</a> <span class="g9"><span class="b">330</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14200543" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/d2.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="［金色琴弦OP] Brand New Breeze" target="_blank">［金色琴弦OP] Brand New Breeze</a> <a href="javascript:;" class="fl" target="_blank">艾琳er</a> <span class="g9"><span class="b">240</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14218552" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/d3.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="Something&quot;s Got A Hold On Me【TO:真爱粉】" target="_blank">Something"s Got A Hold On Me..</a> <a href="javascript:;" class="fl" target="_blank">Christ!na</a> <span class="g9"><span class="b">492</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14217854" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/d4.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【V家】共犯者" target="_blank">【V家】共犯者</a> <a href="javascript:;" class="fl" target="_blank">mayoのneko</a> <span class="g9"><span class="b">489</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14215661" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/d5.jpg"></em> <span class="rank_name"> <a href="http://5sing.kugou.com/fc/14217063.html" class="fl ell" title="We are memories" target="_blank">We are memories</a> <a href="http://5sing.kugou.com/445755" class="fl" target="_blank">Jalam</a> <span class="g9"><span class="b">615</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14217063" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/d6.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【六一8p合唱】时光机" target="_blank">【六一8p合唱】时光机</a> <a href="javascript:;" class="fl" target="_blank">=临安=</a> <span class="g9"><span class="b">993</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14211807" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/d7.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="童年收" target="_blank">童年收</a> <a href="javascript:;" class="fl" target="_blank">飞鱼leo</a> <span class="g9"><span class="b">570</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14215755" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/d8.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title=" 【玉璇玑_.翻唱】练习·小白菜" target="_blank"> 【玉璇玑_.翻唱】练习·小白菜</a> <a href="javascript:;" class="fl" target="_blank">-玉璇玑-</a> <span class="g9"><span class="b">5592</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14215956" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/d9.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="Kash kin" target="_blank">Kash kin</a> <a href="javascript:;" class="fl" target="_blank">声命</a> <span class="g9"><span class="b">528</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14206455" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/d10.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【生贺】山林女儿【HB2沐倾阑】" target="_blank">【生贺】山林女儿【HB2沐倾阑】</a> <a href="javascript:;" class="fl" target="_blank">靜待丶花開_</a> <span class="g9"><span class="b">672</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14205753" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                        <ol class="animation" dr="0" id="fc$13994628$fc$14210806$fc$14200758$fc$14206603$fc$14208486$fc$14211950$fc$14205983$fc$14209358$fc$14193429$fc$14156834" style="display:none" ;="">
+                            <li> <em class="s_r_pic"><img src="img/g1.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="CHN烟子&amp;迪路小圣猫 我们爱过就好" target="_blank">CHN烟子&amp;迪路小圣猫 我们爱过就好</a> <a href="javascript:;" class="fl" target="_blank">CHN烟子</a> <span class="g9"><span class="b">450</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$13994628" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/g2.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【彼岸之音】太阳と向日葵【花咲组】" target="_blank">【彼岸之音】太阳と向日葵【花咲组】</a> <a href="javascript:;" class="fl" target="_blank">Mr.173</a> <span class="g9"><span class="b">1020</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14210806" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/g3.jpg" height="40" width="40"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="《承诺》-纯翻唱" target="_blank">《承诺》-纯翻唱</a> <a href="javascript:;" class="fl" target="_blank">安澈_tony</a> <span class="g9"><span class="b">1101</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14200758" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/g4.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="『F.M』Adoonga-Feed Back" target="_blank">『F.M』Adoonga-Feed Back</a> <a href="javascript:;" class="fl" target="_blank">『F.M』音乐社</a> <span class="g9"><span class="b">456</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14206603" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/g5.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="「Unpretty rap stars」Feedback" target="_blank">「Unpretty rap stars」Feedback</a> <a href="javascript:;" class="fl" target="_blank">＜D.G＞°金77</a> <span class="g9"><span class="b">420</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14208486" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/g6.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【剑三】全门派发型护理指南" target="_blank">【剑三】全门派发型护理指南</a> <a href="javascript:;" class="fl" target="_blank">_青卿</a> <span class="g9"><span class="b">7317</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14211950" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/g7.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【参赛】天禁诀" target="_blank">【参赛】天禁诀</a> <a href="javascript:;" class="fl" target="_blank">_桔子_</a> <span class="g9"><span class="b">1074</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14205983" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/g8.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="〖市井人物系列〗更人事（策/宁归尘 唱/蓝四爷）" target="_blank">〖市井人物系列〗更人事（策/宁归尘 唱/..</a> <a href="javascript:;" class="fl" target="_blank">『在上』风树</a> <span class="g9"><span class="b">483</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14209358" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/g9.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【夜行填词】凤鸣鸿鸾 FT。少年霜" target="_blank">【夜行填词】凤鸣鸿鸾 FT。少年霜</a> <a href="javascript:;" class="fl" target="_blank">锦衣夜行°后期君</a> <span class="g9"><span class="b">666</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14193429" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/g10.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="『追梦』夏虫语冰" target="_blank">『追梦』夏虫语冰</a> <a href="javascript:;" class="fl" target="_blank">蓝 褶</a> <span class="g9"><span class="b">822</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14156834" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                        <ol class="animation" dr="0" id="fc$14159542$fc$14184630$fc$13977956$fc$14208752$fc$14148300$fc$14206647$fc$14207198$fc$14209500$fc$14204746$fc$14203810" style="display:none" ;="">
+                            <li> <em class="s_r_pic"><img src="img/f1.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【填翻】童乡小镇" target="_blank">【填翻】童乡小镇</a> <a href="javascript:;" class="fl" target="_blank">J逍遥谷</a> <span class="g9"><span class="b">639</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14159542" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/f2.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【古代美男十三景·散衣落棋】入梦" target="_blank">【古代美男十三景·散衣落棋】入梦</a> <a href="javascript:;" class="fl" target="_blank">刹月凉</a> <span class="g9"><span class="b">651</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14184630" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/f3.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="NO.15‖SeungRi‖GG BE（To：瑶瑶&amp;阿呆）" target="_blank">NO.15‖SeungRi‖GG BE（To：瑶瑶&amp;阿呆）</a> <a href="javascript:;" class="fl" target="_blank">‖E.R.I.N‖歪恩</a> <span class="g9"><span class="b">621</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$13977956" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/f4.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【剧情版】时年" target="_blank">【剧情版】时年</a> <a href="javascript:;" class="fl" target="_blank">Cynthia_祁言</a> <span class="g9"><span class="b">780</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14208752" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/f5.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【firefox】一眼万年" target="_blank">【firefox】一眼万年</a> <a href="javascript:;" class="fl" target="_blank">__FiRE___</a> <span class="g9"><span class="b">2079</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14148300" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/f6.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="ヒャダインのカカカタ☆カタオモイ-C with.小五" target="_blank">ヒャダインのカカカタ☆カタオモイ-C wit..</a> <a href="javascript:;" class="fl" target="_blank">凤冴Sae</a> <span class="g9"><span class="b">1269</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14206647" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/f7.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="プラネタリウム（星象仪) 歌ってみた。 六酥 【DEMO】" target="_blank">プラネタリウム（星象仪) 歌ってみた。 ..</a> <a href="javascript:;" class="fl" target="_blank">一大口六酥</a> <span class="g9"><span class="b">702</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14207198" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/f8.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="叶魏小剧场" target="_blank">叶魏小剧场</a> <a href="javascript:;" class="fl" target="_blank">阿杰729</a> <span class="g9"><span class="b">6501</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14209500" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/f9.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【全职】有幸遇到你 — 2015年叶修生贺。" target="_blank">【全职】有幸遇到你 — 2015年叶修生贺。</a> <a href="javascript:;" class="fl" target="_blank">沐隐</a> <span class="g9"><span class="b">10563</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14204746" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/f10.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="夢時計" target="_blank">夢時計</a> <a href="javascript:;" class="fl" target="_blank">蓝可可</a> <span class="g9"><span class="b">780</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14203810" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                        <ol class="animation" dr="0" id="fc$14205511$fc$14204318$fc$14205218$fc$14013269$fc$14203645$fc$14196106$fc$14188498$fc$14198661$fc$14193642$fc$14189237" style="display:none" ;="">
+                            <li> <em class="s_r_pic"><img src="img/v1.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【古轩填词】掌心沙 剧情歌" target="_blank">【古轩填词】掌心沙 剧情歌</a> <a href="javascript:;" class="fl" target="_blank">古轩原创音乐社团</a> <span class="g9"><span class="b">864</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14205511" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/v2.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="§调§BAEBAE solo ver." target="_blank">§调§BAEBAE solo ver.</a> <a href="javascript:;" class="fl" target="_blank">§调§饼</a> <span class="g9"><span class="b">1878</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14204318" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/v3.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="湖光水色调 FT青卿&amp;宝物" target="_blank">湖光水色调 FT青卿&amp;宝物</a> <a href="javascript:;" class="fl" target="_blank">临暗_iZumi</a> <span class="g9"><span class="b">639</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14205218" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/v4.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="小观园" target="_blank">小观园</a> <a href="javascript:;" class="fl" target="_blank">翘课迟到</a> <span class="g9"><span class="b">50679</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14013269" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/v5.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="不良人填词翻唱大赛 故剑情深" target="_blank">不良人填词翻唱大赛 故剑情深</a> <a href="javascript:;" class="fl" target="_blank">燚帝</a> <span class="g9"><span class="b">2109</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14203645" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/v6.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【星座系列】水瓶座.透明者" target="_blank">【星座系列】水瓶座.透明者</a> <a href="javascript:;" class="fl" target="_blank">南宫伊人</a> <span class="g9"><span class="b">1200</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14196106" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/v7.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="不期而遇的温暖" target="_blank">不期而遇的温暖</a> <a href="javascript:;" class="fl" target="_blank">慕寒</a> <span class="g9"><span class="b">41670</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14188498" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/v8.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="心臓デモクラシー" target="_blank">心臓デモクラシー</a> <a href="javascript:;" class="fl" target="_blank">おまもり</a> <span class="g9"><span class="b">1668</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14198661" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/v9.jpg"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="【盗墓笔记】麒麟 ft.阿离" target="_blank">【盗墓笔记】麒麟 ft.阿离</a> <a href="javascript:;" class="fl" target="_blank">w团团子w</a> <span class="g9"><span class="b">4719</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14193642" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em class="s_r_pic"><img src="img/v10.png"></em> <span class="rank_name"> <a href="javascript:;" class="fl ell" title="云水倾虹" target="_blank">云水倾虹</a> <a href="javascript:;" class="fl" target="_blank">_雾敛</a> <span class="g9"><span class="b">789</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="fc$14189237" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                    </div>
+                    <div class="song_rank_page clearfix"><span class="clearfix fr db"><a id="prevPage2" href="javascript:void(0)" class="news_up btn bni wh16 fl" title="上一页">上一页</a> <a id="nextPage2" href="javascript:void(0)" class="news_down btn bni wh16 fl" title="下一页">下一页</a></span></div>
+                </div>
+                <div class="s_r_box" style="display:none;">
+                    <div class="s_r_list" id="musicList_03">
+                        <ol class="animation" dr="1" id="yc$2828523$yc$2828175$yc$2822612$yc$2819121$yc$2822682$yc$2810608$yc$2803331$yc$2766734$yc$2830245$yc$2824613" style="display:block" ;="">
+                            <li> <em>01</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="【天下3】原创────半面浮屠">【天下3】原创────半面浮屠</a> <a href="javascript:;" class="fl" target="_blank">菜小宝丶</a> <span class="g9"><span class="b">113562</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2828523" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>02</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="何以清尘">何以清尘</a> <a href="javascript:;" class="fl" target="_blank">慕寒</a> <span class="g9"><span class="b">68262</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2828175" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>03</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="【原创】遇萤">【原创】遇萤</a> <a href="javascript:;" class="fl" target="_blank">只有影子</a> <span class="g9"><span class="b">88743</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2822612" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>04</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="拾念">拾念</a> <a href="javascript:;" class="fl" target="_blank">v不才v</a> <span class="g9"><span class="b">33999</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2819121" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>05</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="【眸阖】#倩女2潇湘馆同人#">【眸阖】#倩女2潇湘馆同人#</a> <a href="javascript:;" class="fl" target="_blank">-小曲儿-</a> <span class="g9"><span class="b">108063</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2822682" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>06</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="「不贰」-出塞">「不贰」-出塞</a> <a href="javascript:;" class="fl" target="_blank">_CcccEs</a> <span class="g9"><span class="b">53688</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2810608" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>07</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="【作曲】天禁诀 唱：光良">【作曲】天禁诀 唱：光良</a> <a href="javascript:;" class="fl" target="_blank">银临</a> <span class="g9"><span class="b">183555</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2803331" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>08</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="月华沉梦">月华沉梦</a> <a href="javascript:;" class="fl" target="_blank">慕寒</a> <span class="g9"><span class="b">487917</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2766734" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>09</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="【不良人】--《不良人》手游主题曲">【不良人】--《不良人》手游主题曲</a> <a href="javascript:;" class="fl" target="_blank">小旭音乐团队</a> <span class="g9"><span class="b">20148</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2830245" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>10</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="楚云深【i2star专辑《千年调》收录曲】">楚云深【i2star专辑《千年调》收录曲】</a> <a href="javascript:;" class="fl" target="_blank">i2star</a> <span class="g9"><span class="b">43959</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2824613" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                        <ol class="animation" dr="0" id="yc$2776692$yc$2817751$yc$2815583$yc$2772119$yc$2776993$yc$2815430$yc$2788661$yc$2826515$yc$2801159$yc$2766721" style="display:none" ;="">
+                            <li> <em>11</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="【ilem】普通DISCO">【ilem】普通DISCO</a> <a href="javascript:;" class="fl" target="_blank">三无MarBlue</a> <span class="g9"><span class="b">366660</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2776692" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>12</em> <span class="rank_name"> <a href="http://5sing.kugou.com/yc/2817751.html" target="_blank" class="fl ell" title="卧冰听雪">卧冰听雪</a> <a href="javascript:;" class="fl" target="_blank">小爱爱爱妈</a> <span class="g9"><span class="b">79218</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2817751" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>13</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="【ilem】星星和雨的夜">【ilem】星星和雨的夜</a> <a href="javascript:;" class="fl" target="_blank">三无MarBlue</a> <span class="g9"><span class="b">73527</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2815583" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>14</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="【爱莲说】">【爱莲说】</a> <a href="javascript:;" class="fl" target="_blank">-小曲儿-</a> <span class="g9"><span class="b">390396</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2772119" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>15</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="山水画意">山水画意</a> <a href="javascript:;" class="fl" target="_blank">慕寒</a> <span class="g9"><span class="b">135852</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2776993" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>16</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="【Chn】曲有误 纯歌版">【Chn】曲有误 纯歌版</a> <a href="javascript:;" class="fl" target="_blank">呆呆Akuma</a> <span class="g9"><span class="b">36657</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2815430" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>17</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="颜非">颜非</a> <a href="javascript:;" class="fl" target="_blank">横颜君</a> <span class="g9"><span class="b">213315</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2788661" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>18</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="细雨—《故曲·今歌》收录曲">细雨—《故曲·今歌》收录曲</a> <a href="javascript:;" class="fl" target="_blank">人衣大人</a> <span class="g9"><span class="b">30036</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2826515" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>19</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="障月">障月</a> <a href="javascript:;" class="fl" target="_blank">满汉全席音乐团队</a> <span class="g9"><span class="b">148206</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2801159" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                            <li> <em>20</em> <span class="rank_name"> <a href="javascript:;" target="_blank" class="fl ell" title="天墉记年">天墉记年</a> <a href="javascript:;" class="fl" target="_blank">慕寒</a> <span class="g9"><span class="b">186660</span>次播放</span> </span> <a href="javascript:void(0)" songinfo="yc$2766721" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a> </li>
+                        </ol>
+                    </div>
+                    <div class="song_rank_page clearfix"><span class="clearfix fr db"><a id="prevPage3" href="javascript:void(0)" class="news_up btn bni wh16 fl" title="上一页">上一页</a> <a id="nextPage3" href="javascript:void(0)" class="news_down btn bni wh16 fl" title="下一页">下一页</a></span></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!--歌单专辑-->
+    <div class="c_box mt30 clearfix bgwh ot_box">
+        <div class="album_main fl">
+            <div class="album_tit group_tit">
+                <ul class="clearfix fa_album f14" id="navs">
+                    <li class="album_tit_clo"><a href="javascript:void(0)">歌单</a></li>
+                    <li class=""><a href="javascript:void(0)">专辑</a></li>
+                </ul>
+            </div>
+            <div class="album_box" id="box1">
+                <div style="display: block;" class="a_g_list group_list clearfix animation fadeInRight">
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/T1.jpg" alt=""> <span class="album_play clearfix db abs PlayerWidget_play" songinfo="{fag.songlist}"><b class="ico album_play_btn bci fl"></b>1047</span></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0);" class="album_bg ico abs PlayerWidget_play" songlistid="55658475482b8607cc68157b"></a></dt>
+                        <dd class="tc"><a href="javascript:;" class="b db ell f_album" title="愿你，童心未泯" target="_blank">愿你，童心未泯</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/T1mxD5B4CT1R4n9VrK_124_124.gif" alt=""> <span class="album_play clearfix db abs PlayerWidget_play" songinfo="{fag.songlist}"><b class="ico album_play_btn bci fl"></b>731</span></span><span class="group_player abs db fw" style="display:none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0);" class="album_bg ico abs PlayerWidget_play" songlistid="54ba2575fabced0854e24c65"></a></dt>
+                        <dd class="tc"><a href="javascript:;" class="b db ell f_album" title="萌娃二逗" target="_blank">萌娃二逗</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/T1s.png" alt=""> <span class="album_play clearfix db abs PlayerWidget_play" songinfo="{fag.songlist}"><b class="ico album_play_btn bci fl"></b>360</span></span><span class="group_player abs db fw" style="display:none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0);" class="album_bg ico abs PlayerWidget_play" songlistid="5549e8bf0dfa2811c0e542c4"></a></dt>
+                        <dd class="tc"><a href="javascript:;" class="b db ell f_album" title="童心未泯" target="_blank">童心未泯</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/T1H.jpg" alt=""> <span class="album_play clearfix db abs PlayerWidget_play" songinfo="{fag.songlist}"><b class="ico album_play_btn bci fl"></b>347</span></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0);" class="album_bg ico abs PlayerWidget_play" songlistid="5475ab3cfabced0a1cc5f834"></a></dt>
+                        <dd class="tc"><a href="javascript:;" class="b db ell f_album" title="韩式烤肉来了" target="_blank">韩式烤肉来了</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/T1x.jpg" alt=""> <span class="album_play clearfix db abs PlayerWidget_play" songinfo="{fag.songlist}"><b class="ico album_play_btn bci fl"></b>1459</span></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0);" class="album_bg ico abs PlayerWidget_play" songlistid="548599970dfa281c24c1d3ee"></a></dt>
+                        <dd class="tc"><a href="javascript:;" class="b db ell f_album" title="忘了梦" target="_blank">忘了梦</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/T1Q.jpg" alt=""> <span class="album_play clearfix db abs PlayerWidget_play" songinfo="{fag.songlist}"><b class="ico album_play_btn bci fl"></b>8558</span></span><span class="group_player abs db fw" style="display:none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0);" class="album_bg ico abs PlayerWidget_play" songlistid="552577b731d06e02b06dce6e"></a></dt>
+                        <dd class="tc"><a href="javascript:;" class="b db ell f_album" title="【治愈系气质女声】" target="_blank">【治愈系气质女声】</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/T1D.jpg" alt=""> <span class="album_play clearfix db abs PlayerWidget_play" songinfo="{fag.songlist}"><b class="ico album_play_btn bci fl"></b>5933</span></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0);" class="album_bg ico abs PlayerWidget_play" songlistid="55476eb6482b861f84604869"></a></dt>
+                        <dd class="tc"><a href="javascript:;" class="b db ell f_album" title="欲买桂花同载酒【小说同人剧情歌" target="_blank">欲买桂花同载酒【小说同人剧情歌</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/T1y.jpg"> <span class="album_play clearfix db abs PlayerWidget_play" songinfo="{fag.songlist}"><b class="ico album_play_btn bci fl"></b>6052</span></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0);" class="album_bg ico abs PlayerWidget_play" songlistid="5543652b31d06e3a0c728cc5"></a></dt>
+                        <dd class="tc"><a href="javascript:;" class="b db ell f_album" title="燃烧吧！中二之魂！" target="_blank">燃烧吧！中二之魂！</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/T1j.png" alt=""> <span class="album_play clearfix db abs PlayerWidget_play" songinfo="{fag.songlist}"><b class="ico album_play_btn bci fl"></b>3985</span></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0);" class="album_bg ico abs PlayerWidget_play" songlistid="554781470dfa2821302eaa9a"></a></dt>
+                        <dd class="tc"><a href="javascript:;" class="b db ell f_album" title="闻曲听声" target="_blank">闻曲听声</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/T1_G.jpg" alt=""> <span class="album_play clearfix db abs PlayerWidget_play" songinfo="{fag.songlist}"><b class="ico album_play_btn bci fl"></b>3477</span></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0);" class="album_bg ico abs PlayerWidget_play" songlistid="551e76f2482b8607a0d8908f"></a></dt>
+                        <dd class="tc"><a href="javascript:;" class="b db ell f_album" title="那些美cry的和声" target="_blank">那些美cry的和声</a></dd>
+                    </dl>
+                </div>
+                <div style="display: none;" class="a_g_list group_list clearfix animation fadeInRight">
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/y1.jpg"></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0)#" class="album_bg ico abs PlayerWidget_play" songinfo="yc$2824613$yc$2808221$yc$2781583$yc$2739738$yc$2706549$yc$2645437$yc$2595423$yc$2310732$yc$2374202$yc$2505294"></a></dt>
+                        <dd class="tc"><a href="javascript:void(0);" class="b db ell f_album" title="i2star首张原创专辑《千年调》" target="_blank">i2star首张原创专辑《千年调》</a><a href="javascript:void(0);" class="f_g9" target="_blank">i2star</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/y2.jpg"></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0)#" class="album_bg ico abs PlayerWidget_play" songinfo="yc$2834426$yc$2834567$yc$2834565$yc$2834563$yc$2834561$yc$2834559$yc$2834557$yc$2834556$yc$2834555$yc$2834552$yc$2834424$yc$2834420$yc$2834418$yc$2834417$yc$2834412$yc$2834428$yc$2834434$yc$2834439$yc$2834512$yc$2834513$yc$2834518$yc$2834541$yc$2834544$yc$2834546$yc$2834550"></a></dt>
+                        <dd class="tc"><a href="javascript:void(0);" class="b db ell f_album" title="徐子崴《于无声处》原声大碟" target="_blank">徐子崴《于无声处》原声大碟</a><a href="javascript:void(0);" class="f_g9" target="_blank">徐子崴</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/y3.jpg"></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0)#" class="album_bg ico abs PlayerWidget_play" songinfo="yc$2802677$yc$2813543$yc$2825271"></a></dt>
+                        <dd class="tc"><a href="javascript:void(0);" class="b db ell f_album" title="【猫科动物】同名EP" target="_blank">【猫科动物】同名EP</a><a href="javascript:void(0);" class="f_g9" target="_blank">猫科动物/FELINE</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/y4.jpg"></span><span class="group_player abs db fw" style="display:none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0)#" class="album_bg ico abs PlayerWidget_play" songinfo="yc$2822325$yc$2820325$yc$2710980$yc$2664559$yc$2657025$yc$2653156$yc$2547590$yc$2520424$yc$2500441$yc$2129008$yc$2229133$yc$2261980$yc$2349424$yc$2403434$yc$2458947"></a></dt>
+                        <dd class="tc"><a href="javascript:void(0);" class="b db ell f_album" title="国学唱歌集——诗经" target="_blank">国学唱歌集——诗经</a><a href="javascript:void(0);" class="f_g9" target="_blank">于文华</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/y5.jpg"></span><span class="group_player abs db fw" style="display:none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0)#" class="album_bg ico abs PlayerWidget_play" songinfo="yc$2819688$yc$2819686$yc$2819684$yc$2819683$yc$2819681$yc$2819679$yc$2819677"></a></dt>
+                        <dd class="tc"><a href="javascript:void(0);" class="b db ell f_album" title="乖，我来了" target="_blank">乖，我来了</a><a href="javascript:void(0);" class="f_g9" target="_blank">陈思伊（丫丫）</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/y6.png"></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0)#" class="album_bg ico abs PlayerWidget_play" songinfo="yc$2806987$yc$2789395$yc$2786428$yc$2785682$yc$2749477$yc$2725244$yc$2718007$yc$2712572$yc$2710827$yc$2687481"></a></dt>
+                        <dd class="tc"><a href="javascript:void(0);" class="b db ell f_album" title="深深几许" target="_blank">深深几许</a><a href="javascript:void(0);" class="f_g9" target="_blank">林音炫</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/y7.jpg"></span><span class="group_player abs db fw" style="display: none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0)#" class="album_bg ico abs PlayerWidget_play" songinfo="yc$2816328$fc$14145339$fc$14145344$fc$14145350$fc$14145354$fc$14145357$fc$14145364$fc$14145370$fc$14145375$fc$14145382$fc$14145386$fc$14145337"></a></dt>
+                        <dd class="tc"><a href="javascript:void(0);" class="b db ell f_album" title="中国新声代 - 余家辉" target="_blank">中国新声代 - 余家辉</a><a href="javascript:void(0);" class="f_g9" target="_blank">余家辉</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/y8.jpg"></span><span class="group_player abs db fw" style="display:none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0)#" class="album_bg ico abs PlayerWidget_play" songinfo="yc$2807323$yc$2807324$yc$2807329$yc$2807334$yc$2807336$yc$2807339$yc$2807340$yc$2807341$yc$2807352$yc$2807358$yc$2807372"></a></dt>
+                        <dd class="tc"><a href="javascript:void(0);" class="b db ell f_album" title="Chiu-Pi" target="_blank">Chiu-Pi</a><a href="javascript:void(0);" class="f_g9" target="_blank">邱比</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/y9.jpg"></span><span class="group_player abs db fw" style="display:none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0)#" class="album_bg ico abs PlayerWidget_play" songinfo="fc$14089172$fc$14089177$fc$14089188$fc$14089206$fc$14089208"></a></dt>
+                        <dd class="tc"><a href="javascript:void(0);l" class="b db ell f_album" title="一首晚安" target="_blank">一首晚安</a><a href="javascript:void(0);" class="f_g9" target="_blank">晴天的暖</a></dd>
+                    </dl>
+                    <dl>
+                        <dt class="rel"><span class="rel"><img src="img/y10.jpg"></span><span class="group_player abs db fw" style="display:none;"><b class="btn bni" title="播放歌单"></b>播放歌单</span><a href="javascript:void(0)#" class="album_bg ico abs PlayerWidget_play" songinfo="fc$13466101$fc$13462243$fc$13458077$fc$13454444$fc$13451061$fc$13447276$fc$13443064$fc$13436634$fc$13708805$fc$13776342$fc$13733322$fc$13687063$fc$13666604$fc$13646472$fc$13626417$fc$13605922$fc$13895457$fc$13942474$fc$13895503$fc$13892663$fc$13889866"></a></dt>
+                        <dd class="tc"><a href="javascript:void(0);" class="b db ell f_album" title="剑网3睡前故事系列" target="_blank">剑网3睡前故事系列</a><a href="javascript:void(0);" class="f_g9" target="_blank">三个糙汉一个软妹</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="share_main fr">
+            <div class="album_tit share_tit">
+                <ul class="clearfix fa_album f14" id="r_navs">
+                    <li class="album_tit_clo"><a href="javascript:void(0)">分享最多</a></li>
+                    <li class=""><a href="javascript:void(0)">传播最快</a></li>
+                </ul>
+            </div>
+            <div class="share_box" id="box2">
+                <div style="display: block;" class="ot_list animation fadeInRight">
+                    <ol>
+                        <li class="clearfix"> <a href="javascript:void(0)" class="fl ot_pic" target="_blank"><img src="img/p1.jpg" alt="押韵机器"></a> <span class="fl ot_ne"><a href="javascript:void(0)" class="ell f_gb db" title="这儿是北京" target="_blank">这儿是北京</a> <a href="javascript:void(0)" class="f_g9" target="_blank">押韵机器</a></span> <span class="fr ot_btn"><a href="javascript:void(0)" songinfo="fc$14188512" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></span> </li>
+                        <li class="clearfix"> <a href="javascript:void(0)" class="fl ot_pic" target="_blank"><img src="img/p2.jpg" alt="AliceTai"></a> <span class="fl ot_ne"><a href="javascript:void(0)" class="ell f_gb db" title="红颜若雪" target="_blank">红颜若雪</a> <a href="javascript:void(0)" class="f_g9" target="_blank">AliceTai</a></span> <span class="fr ot_btn"><a href="javascript:void(0)" songinfo="fc$14221797" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></span> </li>
+                        <li class="clearfix"> <a href="javascript:void(0)" class="fl ot_pic" target="_blank"><img src="img/p3.jpg" alt="clessS"></a> <span class="fl ot_ne"><a href="javascript:void(0)" class="ell f_gb db" title="Life goes on" target="_blank">Life goes on</a> <a href="javascript:void(0)" class="f_g9" target="_blank">clessS</a></span> <span class="fr ot_btn"><a href="javascript:void(0)" songinfo="fc$14204750" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></span> </li>
+                        <li class="clearfix"> <a href="javascript:void(0)" class="fl ot_pic" target="_blank"><img src="img/p4.png" alt="冥月の翼"></a> <span class="fl ot_ne"><a href="javascript:void(0)" class="ell f_gb db" title="世界千年物语Ⅱ crossfade" target="_blank">世界千年物语Ⅱ crossfade</a> <a href="javascript:void(0)" class="f_g9" target="_blank">冥月の翼</a></span> <span class="fr ot_btn"><a href="javascript:void(0)" songinfo="yc$2831362" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></span> </li>
+                        <li class="clearfix"> <a href="javascript:void(0)" class="fl ot_pic" target="_blank"><img src="img/p5.png" alt="沐隐"></a> <span class="fl ot_ne"><a href="javascript:void(0)" class="ell f_gb db" title="【全职】有幸遇到你 — 2015年叶修生贺。" target="_blank">【全职】有幸遇到你 — 2015年叶修生贺。</a> <a href="javascript:void(0)" class="f_g9" target="_blank">沐隐</a></span> <span class="fr ot_btn"><a href="javascript:void(0)" songinfo="fc$14204746" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></span> </li>
+                    </ol>
+                </div>
+                <div style="display: none;" class="ot_list animation fadeInRight">
+                    <ol>
+                        <li class="clearfix"> <a href="javascript:void(0)" class="fl ot_pic" target="_blank"><img src="img/p6.jpg" alt="银临"></a> <span class="lt ot_ne"><a href="javascript:void(0)" class="ell f_gb db" title="牵丝戏 feat. Aki阿杰" target="_blank">牵丝戏 feat. Aki阿杰</a> <a href="javascript:void(0)" class="f_g9" target="_blank">银临</a></span> <span class="fr ot_btn"><a href="javascript:void(0)" songinfo="yc$2732572" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></span> </li>
+                        <li class="clearfix"> <a href="javascript:void(0)" class="fl ot_pic" target="_blank"><img src="img/p7.jpg" alt="三无MarBlue"></a> <span class="fl ot_ne"><a href="javascript:void(0)" class="ell f_gb db" title="【ilem】普通DISCO" target="_blank">【ilem】普通DISCO</a> <a href="javascript:void(0)" class="f_g9" target="_blank">三无MarBlue</a></span> <span class="fr ot_btn"><a href="javascript:void(0)" songinfo="yc$2776692" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></span> </li>
+                        <li class="clearfix"> <a href="javascript:void(0)" class="fl ot_pic" target="_blank"><img src="img/p8.jpg" alt="只有影子"></a> <span class="fl ot_ne"><a href="javascript:void(0)" class="ell f_gb db" title="【原创】遇萤" target="_blank">【原创】遇萤</a> <a href="javascript:void(0)" class="f_g9" target="_blank">只有影子</a></span> <span class="fr ot_btn"><a href="javascript:void(0)" songinfo="yc$2822612" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></span> </li>
+                        <li class="clearfix"> <a href="javascript:void(0)" class="fl ot_pic" target="_blank"><img src="img/p9.jpg" alt="T2o、"></a> <span class="lt ot_ne"><a href="javascript:void(0)" class="ell f_gb db" title="【T2o】洛天依「圈圈点点圈圈点点圈圈点点?」" target="_blank">【T2o】洛天依「圈圈点点圈圈点点圈圈点点?」</a> <a href="javascript:void(0)" class="f_g9" target="_blank">T2o、</a></span> <span class="fr ot_btn"><a href="javascript:void(0)" songinfo="yc$2831236" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></span> </li>
+                        <li class="clearfix"> <a href="javascript:void(0)" class="fl ot_pic" target="_blank"><img src="img/p10.jpg" alt="西瓜Kune"></a> <span class="fl ot_ne"><a href="javascript:void(0)" class="ell f_gb db" title="权御天下" target="_blank">权御天下</a> <a href="javascript:void(0)" class="f_g9" target="_blank">西瓜Kune</a></span> <span class="fr ot_btn"><a href="javascript:void(0)" songinfo="yc$2763100" class="btn bni play_btn PlayerWidget_play" title="播放">试听</a></span> </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部-->
+<div class="footer mt30 bgwh">
+    <div class="w960 auto ft_list clearfix">
+        <ul>
+            <li class="sing">
+                <h6></h6>
+                <a href="javascript:void(0)" target="_blank">关于我们</a> <a href="javascript:void(0)l" target="_blank">权利声明</a> <a href="javascript:void(0)">商务合作</a> <br>
+                <a href="javascript:void(0)" target="_blank">合作伙伴</a> <a href="javascript:void(0)" target="_blank">诚聘英才</a> <a href="javascript:void(0)" target="_blank">联系我们</a> </li>
+            <li class="concur">
+                <h6>合作伙伴</h6>
+                <a href="javascript:void(0)" target="_blank" class="lg_01"></a> <a href="javascript:void(0)" target="_blank" class="lg_02"></a> <a href="javascript:void(0)" target="_blank" class="lg_03"></a> <a href="javascript:void(0)" target="_blank" class="lg_04"></a> </li>
+            <li class="help">
+                <h6>实用话题</h6>
+                <ul>
+                    <li><a href="javascript:void(0)" target="_blank" title="网站违规广告细则说明">1、网站违规广告细则说明</a></li>
+                    <li><a href="javascript:void(0)" target="_blank" title="申请网站推荐歌手和明星会员">2、申请网站推荐歌手和明星..</a></li>
+                    <li><a href="javascript:void(0)" target="_blank" title="5sing客户端下载">3、5sing客户端下载</a></li>
+                    <li><a href="javascript:void(0)" target="_blank" title="申请网站推荐歌曲">4、申请网站推荐歌曲</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p>网络文化经营许可证： 文网文2010-175号 增值电信业务经营许可证粤B2-20060339 <a href="javascript:void(0)" target="_blank">粤ICP备09017694号</a> 网络视听许可证1910564号</p>
+</div>
+
+<!--置顶-->
+<div class="go_top" id="go_top">
+    <div class="app_qr rel"> <a href="javascript:void(0)" class="btn" target="_self">5SING,APP下载</a>
+        <dl class="app_download abs">
+            <dt class="rel"> <span class="go_arrow abs"></span> <span class="btn">二维码</span> </dt>
+            <dd><img src="img/qrcode.png" alt="二维码"></dd>
+        </dl>
+    </div>
+    <div class="inquiry rel"> <a href="javascript:;" class="btn back_btn" title="用户反馈" onclick="alert('服务器暂时关闭')">用户反馈</a> </div>
+    <div style="opacity: 0;" class="dingbu rel"><a href="javascript:;" target="_self" class="btn" title="返回顶部">返回顶部</a></div>
+</div>
+</body>
+</html>
