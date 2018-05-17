@@ -38,7 +38,7 @@ var data=[
 	{"href":'commonly_functions.html',"name":"常用函数封装整理","timer":'2017-10-24',"em":'常用函数封装整理'},
 	{"href":'two_layers_for_loop.html',"name":"两层for循环(原生JS和JQ)","timer":'2017-11-13',"em":'两层for循环(原生JS和JQ)'},
 	{"href":'echarts_histogram_pie.html',"name":"echarts(柱状图,双层饼图,双柱状图)","timer":'2017-12-11',"em":'echarts(柱状图,双层饼图,双柱状图)'},
-	{"href":'echarts_histogram_pie.html',"name":"手动切换和自动切换","timer":'2018-02-28',"em":'手动切换和自动切换'},
+	{"href":'switch_automatically_switches.html',"name":"手动切换和自动切换","timer":'2018-02-28',"em":'手动切换和自动切换'},
 ];
 console.log( data );
 
