@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>火车东站枢纽交通仿真系统应用平台 - 首页</title>
+<style type="text/css">
+body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+</style>
+<link rel="stylesheet" type="text/css" href="css/basic.css">
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=4c37887dd000b1e543a1add699d05e83"></script>
+<script src="echarts-all.js"></script>
+<script type="text/javascript" src="BMap.js"></script>
+ <script type="text/javascript" src="http://api.map.baidu.com/library/IndoorMap/1.0/src/indoor.min.js?v=1.0.1 "></script>
+</head>
+  
+<body>
+<div class="header">
+  <span>火车东站枢纽交通仿真系统应用平台</span>
+  <a class="active" href="index.html">综合信息</a>
+  <a href="showMain.html">区域监测</a>
+  <a href="main/main.html">数据分析</a>
+  <div class="header_right">
+    <a href="javascript:;">
+      <span>欢迎您！ 平台运营人员</span>
+      <span>2018-11-19 15:54:07<em></em></span>
+    </a>
+  </div>
+</div>
+<div class="header1"></div>
+<div id="allmap"></div>
+<div class="index_gj">
+  <p>
+    <a id="0" class="active" href="javascript:;">铁路到达换乘</a>
+    <a id="1" href="javascript:;">铁路出发换乘</a>
+  </p>
+  <ul>
+    <li class="active1">
+      <img src="img/dt.png" />
+      <span>地铁</span>
+    </li>
+    <li>
+      <img src="img/gjc.png" />
+      <span>公交车</span>
+    </li>
+    <li>
+      <img src="img/db.png" />
+      <span>大巴</span>
+    </li>
+    <li>
+      <img src="img/czc.png" />
+      <span>出租车</span>
+    </li>
+    <li>
+      <img src="img/shcl.png" />
+      <span>社会车辆</span>
+    </li>
+  </ul>
+</div>
+<div class="index_total"><div class="index_total1"></div></div>
+<div id="pupList">
+  <a class="fg" title="切换风格"></a>
+</div>
+<div class="pupList_style">
+  <a id="wyl" title="午夜蓝风格">午夜蓝风格</a>
+  <a id="gdh" title="高端灰风格">高端灰风格</a>
+  <a id="hy" title="黑夜风格">黑夜风格</a>
+  <a id="zsz" title="高端灰风格">朱砂痣风格</a>
+</div>
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="baidu.js"></script>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

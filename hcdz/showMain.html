@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>杭州东站交通仿真系统 - 区域监测</title>
+<link rel="stylesheet" type="text/css" href="css/basic.css">
+<style type="text/css">
+body {
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: #022236;
+}
+.header{top:-70px;}
+</style>
+</head>
+
+<body id="app">
+<div class="index_bj">
+  <div class="header">
+    <span>杭州东站交通仿真系统</span>
+    <a href="index.html">综合信息</a>
+    <a class="active" href="showMain.html">区域监测</a>
+    <a href="main/main.html">数据分析</a>
+    <div class="header_right">
+      <a href="javascript:;">
+        <span>欢迎您！ 平台运营人员</span>
+        <span>2018-11-19 15:54:07<em></em></span>
+      </a>
+    </div>
+  </div>
+  <div class="header1"></div>
+
+  <div class="index_top">
+    <div class="index_bj_top">
+      <p class="znz"></p>
+      <ul>
+        <li>
+          <div id="carList">
+            <p>(近5分钟)出租车到达客流量<strong id="floor2_car">89</strong></p>
+            <span class="car"></span>
+          </div>
+
+          <div class="index_ren_animation">
+          </div>
+          <span class="ren_like"></span>
+          <span class="ren_like1"></span>
+          <span class="ren_like1_1"></span>
+  
+          <span class="ren_like3"></span>
+  
+          <span class="ren_like4"></span>
+          <span class="ren_like4_1"></span>
+          
+          <div class="heatmapOverlay">
+            <div class="heatmapOverlay_co">
+            </div>
+          </div>
+          <div class="index_bj_top_popup">
+            <p>
+              当前客流量
+              <strong>359</strong>
+            </p>
+            <p>
+              (近5分钟)进客流量
+              <strong>395</strong>
+            </p>
+            <p>
+              (近5分钟)出客流量
+              <strong>935</strong>
+            </p>
+          </div>
+          <div class="index_bj_top_rlt">
+            <div class="index_bj_top_rlt_co">
+              <dl>
+                <dd>10,000 - 20,000</dd>
+                <dd>5,000 - 10,000</dd>
+                <dd>1,000 - 5,000</dd>
+                <dd>500 - 1,000</dd>
+                <dd>0 - 500</dd>
+              </dl>
+              <div class="timeLine">
+                <a href="javascript:;"></a>
+              </div>
+              <a class="click" href="javascript:;"></a>
+            </div>
+            <em>热力图</em>
+          </div>
+        </li>
+
+        <li>
+          <div class="index_bj_top_popup2">
+            <p>
+              当前客流量
+              <strong>359</strong>
+            </p>
+            <p>
+              (近5分钟)进客流量
+              <strong>395</strong>
+            </p>
+            <p>
+              (近5分钟)出客流量
+              <strong>935</strong>
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <div id="carList1">
+            <p>(近5分钟)出租车离开客流量<strong id="unfloor_car">113</strong></p>
+            <span class="car"></span>
+          </div>
+
+          <div class="ren_like_zong3">
+          </div>
+
+          <span class="ren_like"></span>
+          <span class="ren_like1"></span>
+          <span class="ren_like1_1"></span>
+          <span class="ren_like1_2"></span>
+          <span class="ren_like1_3"></span>
+          <span class="ren_like1_4"></span>
+          <span class="ren_like1_5"></span>
+
+          <span class="ren_like4"></span>
+          <span class="ren_like4_1"></span>
+          <span class="ren_like4_2"></span>
+          <span class="ren_like4_3"></span>
+          <span class="ren_like4_4"></span>
+          <span class="ren_like4_5"></span>
+          <span class="ren_like4_6"></span>
+
+          <span class="ren_like4_z1"></span>
+          <span class="ren_like4_z2"></span>
+          <span class="ren_like4_z3"></span>
+
+          <div class="index_bj_top_popup3">
+            <p>
+              当前客流量
+              <strong>359</strong>
+            </p>
+            <p>
+              (近5分钟)进客流量
+              <strong>395</strong>
+            </p>
+            <p>
+              (近5分钟)出客流量
+              <strong>935</strong>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="index_kll_top index_kll_top1">
+      <div class="index_title">
+        <h1>东站层面区域展示</h1>
+      </div>
+      <ul>
+        <li class="active">
+          <em></em>
+          <p>候车层<br>（地上2层）</p>
+        </li>
+        <li>
+          <em></em>
+          <p>站台层<br>（地面层）</p>
+        </li>
+        <li>
+          <em></em>
+          <p>到达层<br>（地下1层）</p>
+        </li>
+      </ul>
+    </div>
+    <div class="index_kll_top">
+      <div class="index_title">
+        <h1>东站枢纽客流量（16:35）</h1>
+      </div>
+      <div class="index_kll_current">
+        <dl>
+          <dt></dt>
+          <dd>当前实时</dd>
+          <dd><strong>3,699</strong>人</dd>
+        </dl>
+        <dl>
+          <dt></dt>
+          <dd>当前峰值</dd>
+          <dd><strong>14,553</strong>人</dd>
+        </dl>
+      </div>
+      <div id="index_kll_like"></div>
+    </div>
+  </div>
+  
+  <div class="index_bottom">
+    <div class="index_bottom1">
+      <div class="index_title">
+        <h1>各交通方式客流量（16:35）</h1>
+        <ul>
+          <li>
+            <em></em>
+            <span>到达</span>
+          </li>
+          <li>
+            <em></em>
+            <span>离开</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="index_bottom1_echarts">
+        <ul class="six_month"></ul>
+        <div id="traffic_transportation"></div>
+      </div>
+    </div>
+
+    <div class="index_bottom1">
+      <div class="index_title">
+        <h1>高铁到达/离开换乘量（16:35）</h1>
+      </div>
+
+      <div class="index_bottom1_pie">
+        <h2>
+          <span>高铁到达量</span>
+        </h2>
+        <div id="index_bottom1_pie_bj"></div>
+      </div>
+
+      <div class="index_bottom1_pie">
+        <h2>
+          <span>高铁离开量</span>
+        </h2>
+        <div id="index_bottom1_pie_bj1"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/echarts.simple.min.js"></script>
+<script type="text/javascript" src="js/showQyjc.js"></script>
+<script>
+//导航移入移出
+var timer2 = null;
+  $(".header1").mouseover(function(){
+    clearTimeout(timer2);
+    $(".header").css({top:'-4px'});
+  });
+  $(".header").mouseout(function(){
+    clearTimeout(timer2);
+    timer2=setTimeout(function(){
+      $(".header").css({top:'-70px'});
+    },200)
+  });
+</script>
+</html>
